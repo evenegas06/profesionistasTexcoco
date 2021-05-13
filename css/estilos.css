@@ -369,12 +369,26 @@ body.dark .categorias a.activo {
   border-left: solid 0.25px #00090c;
 }
 
+@media screen and (max-width: 900px) {
+  .columna3 {
+    border-top: solid 0.25px #00090c;
+    border-left: none !important;
+  }
+}
+
 body.dark .columna2 {
   border-right: solid 0.25px whitesmoke;
 }
 
 body.dark .columna3 {
+  border-top: solid 0.25px whitesmoke;
   border-left: solid 0.25px whitesmoke;
+}
+
+@media screen and (min-width: 900px) {
+  body.dark .columna3 {
+    border-top: solid 0.25px transparent;
+  }
 }
 
 body.dark .columna3 p {

@@ -387,6 +387,10 @@ input:focus {
 
 .columna3 {
     border-left: solid 0.25px $azuldark;
+    @media screen and (max-width: 900px) {
+        border-top: solid 0.25px $azuldark;
+        border-left: none !important;
+    }
 }
 
 body.dark {
@@ -394,7 +398,11 @@ body.dark {
         border-right: solid 0.25px whitesmoke;
     }
     .columna3 {
+        border-top: solid 0.25px whitesmoke;
         border-left: solid 0.25px whitesmoke;
+        @media screen and (min-width: 900px) {
+            border-top: solid 0.25px transparent;
+        }
         p {
             color: $grisClaro;
         }
