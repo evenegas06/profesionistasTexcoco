@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.psique {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(/assets/icons/psi.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.call {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://psicologosdetexoco2021.carlosarturomt.com/assets/icons/phone-call1.png);
+    /* background-image: url(/assets/icons/phone-call1.png); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+}
+
+.cellPhone {
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    background-image: url(/assets/icons/smartphone.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background-image: url(https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/google-map.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 2px;
+}
+
+.verified {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://images.vexels.com/media/users/3/157931/isolated/preview/604a0cadf94914c7ee6c6e552e9b4487-icono-de-c-iacute-rculo-de-marca-de-verificaci-oacute-n-curvo-by-vexels.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.buttonStyle {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+/* column drop */
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.columna1,
+.columna2,
+.columna3 {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .columna1 {
+        /* background-color: whitesmoke; */
+        width: 60%;
+        -webkit-order: 2;
+        order: 2;
+    }
+    .columna2 {
+        /* background-color: yellow; */
+        width: 40%;
+        -webkit-order: 1;
+        order: 1;
+    }
+    .columna3 {
+        /* background-color: yellow; */
+        width: 100%;
+        -webkit-order: 3;
+        order: 3;
+    }
+}
+
+@media (min-width: 800px) {
+    .columna1 {
+        margin-left: 20%;
+    }
+    .columna2 {
+        /* background-color: whitesmoke; */
+        width: 20%;
+        padding: 2%;
+        position: fixed;
+    }
+    .columna3 {
+        /* background-color: whitesmoke; */
+        width: 20%;
+        padding: 2%;
+        display: block;
+        /* position: fixed;
+        margin-left: 80%;
+        overflow: scroll;
+        overflow-y: scroll !important;
+        scroll-behavior: smooth; */
+    }
+}
