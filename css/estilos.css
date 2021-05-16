@@ -1,19 +1,22 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 html main {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Padauk', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 li {
@@ -28,6 +31,7 @@ body {
   overflow: scroll;
   overflow-x: hidden;
   background: whitesmoke;
+  -webkit-transition: .9s ease all;
   transition: .9s ease all;
 }
 
@@ -118,6 +122,7 @@ body.dark #menu ul li a {
     width: 60%;
     height: 0;
     overflow: hidden;
+    -webkit-transition: .9s ease all;
     transition: .9s ease all;
   }
   body.dark #menu {
@@ -162,7 +167,8 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body.dark .buscar {
@@ -177,7 +183,8 @@ body.dark .buscar {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 500px) {
@@ -188,7 +195,8 @@ body.dark .buscar {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -255,7 +263,9 @@ body.dark .container-details article h4 {
   margin-top: 10px;
   width: 100%;
   height: 45px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 2px solid #000e20;
   background-color: rgba(255, 255, 255, 0.041);
   border-radius: 50px;
@@ -273,8 +283,32 @@ input:focus {
   outline: none;
 }
 
+::-webkit-input-placeholder {
+  color: #00313f;
+}
+
+:-ms-input-placeholder {
+  color: #00313f;
+}
+
+::-ms-input-placeholder {
+  color: #00313f;
+}
+
 ::placeholder {
   color: #00313f;
+}
+
+body.dark ::-webkit-input-placeholder {
+  color: #FEFEFE;
+}
+
+body.dark :-ms-input-placeholder {
+  color: #FEFEFE;
+}
+
+body.dark ::-ms-input-placeholder {
+  color: #FEFEFE;
 }
 
 body.dark ::placeholder {
@@ -283,9 +317,14 @@ body.dark ::placeholder {
 
 .categorias {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .categorias a {
@@ -313,7 +352,9 @@ body.dark .categorias a.activo {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  order: 0;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 .phone {
@@ -326,7 +367,9 @@ body.dark .categorias a.activo {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  order: 0;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 .mail {
@@ -339,7 +382,9 @@ body.dark .categorias a.activo {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  order: 0;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 .font {
@@ -352,7 +397,9 @@ body.dark .categorias a.activo {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  order: 0;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 .columna2 {
@@ -397,12 +444,16 @@ body.dark .columna3 p {
 
 .grid {
   /* border: solid red; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   width: 93%;
   margin: 0 auto;
   opacity: 0;
+  -webkit-transition: opacity 0.5s linear 1s;
   transition: opacity 0.5s linear 1s;
 }
 
@@ -537,13 +588,14 @@ a {
 
 @media screen and (max-width: 600px) {
   .container-inf--card article p,
-a {
+  a {
     font-size: 1.1rem;
     line-height: 1.4rem;
   }
 }
 
-body.dark .container-inf--card article p, body.dark a {
+body.dark .container-inf--card article p, body.dark
+a {
   color: #FEFEFE;
 }
 
@@ -558,8 +610,11 @@ body.dark .container-inf--card article p, body.dark a {
 
 .buttons-index {
   /* border: green solid 2px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 5px;
   padding: 0px;
   margin-bottom: 10px;
@@ -569,9 +624,14 @@ body.dark .container-inf--card article p, body.dark a {
   border: #00313f solid 2px;
   border-radius: 5px;
   width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 2;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .button-index a {
@@ -591,9 +651,14 @@ body.dark .container-inf--card article p, body.dark a {
   border-radius: 5px;
   margin-left: 2.5%;
   width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .button1-index a {
@@ -652,6 +717,8 @@ body.dark .columna3 h3:hover {
 }
 
 .columna3 article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: #00313f solid 1.5px;
   margin-bottom: 20px;
@@ -763,3 +830,4 @@ body.dark .calendar {
 body.dark .user1 {
   background-image: url(/assets/icons/user1.png);
 }
+/*# sourceMappingURL=estilos.css.map */

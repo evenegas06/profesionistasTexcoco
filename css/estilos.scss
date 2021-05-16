@@ -24,7 +24,7 @@ $sombraLight: 10px 10px 0px rgba(0, 0, 0, .16);
 html main {
     box-sizing: border-box;
     font-size: 62.5%;
-    font-family: 'Padauk', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 *,
@@ -53,12 +53,6 @@ body.dark {
 }
 
 // ----- ----- ----- ----- ----- HEADER ----- ----- ----- ----- ----- 
-header {
-    // background-color: $blanco;
-    // border: yellow solid 1px;
-    // padding: 5px;
-}
-
 .menu-toggle {
     display: none;
     margin-left: auto;
