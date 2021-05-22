@@ -73,10 +73,10 @@ body.dark {
   display: inline-block;
   position: relative;
   color: #00313f;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
-  line-height: 2.9rem;
+  line-height: 2.7rem;
   padding: 0 9px;
 }
 
@@ -85,6 +85,29 @@ body.dark #menu ul li a {
 }
 
 #menu ul li a:hover {
+  color: #000;
+  background-color: rgba(0, 255, 255, 0.514);
+  border-radius: 55px;
+  padding: 3px 10px;
+  font-weight: bold;
+}
+
+.li-p p {
+  display: inline-block;
+  position: relative;
+  color: #00313f;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 2.7rem;
+  padding: 0 9px;
+}
+
+body.dark .li-p p {
+  color: #ececec;
+}
+
+.li-p p:hover {
   color: #000;
   background-color: rgba(0, 255, 255, 0.514);
   border-radius: 55px;
@@ -582,8 +605,8 @@ body.dark .main-container-inf-index h3 {
 .container-inf--card article p,
 a {
   color: #494949;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -765,7 +788,7 @@ body.dark .users {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/assets/icons/newspaper.png);
+  background-image: url(https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/newspaper.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -779,10 +802,12 @@ body.dark .news {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/assets/icons/usuario.png);
+  background-image: url(https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/usuario.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
 }
 
 body.dark .user {
@@ -793,7 +818,7 @@ body.dark .user {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/assets/icons/moon.png);
+  background-image: url(https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/moon.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -821,7 +846,7 @@ body.dark .calendar {
   display: inline-block;
   width: 11px;
   height: 11px;
-  background-image: url(/assets/icons/usuario.png);
+  background-image: url(https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/usuario.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
