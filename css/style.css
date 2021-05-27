@@ -81,17 +81,18 @@
 @media (min-width: 600px) {
   .columna1 {
     /* background-color: whitesmoke; */
-    width: 60%;
+    width: 70%;
     -webkit-order: 2;
     order: 2;
   }
   .columna2 {
-    /* background-color: yellow; */
+    background-color: whitesmoke;
     width: 30%;
     -webkit-order: 1;
     order: 1;
   }
   .columna3 {
+    background-color: whitesmoke;
     width: 100%;
     -webkit-order: 3;
     order: 3;
@@ -100,6 +101,7 @@
 
 @media (min-width: 900px) {
   .columna1 {
+    width: 60%;
     margin-left: 20%;
   }
   .columna2 {

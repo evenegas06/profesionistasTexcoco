@@ -15,6 +15,8 @@ $azuldark: #00090c;
 $morado: #8921c0;
 $sombraDark: 10px 10px 20px rgba(170, 170, 170, .16);
 $sombraLight: 10px 10px 0px rgba(0, 0, 0, .16);
+$gray--color: rgb(43, 43, 43);
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -92,6 +94,7 @@ body.dark {
     text-decoration: none;
     line-height: 2.7rem;
     padding: 0 9px;
+
     // transition: .9s ease all;
     body.dark & {
         color: $grisClaro;
@@ -115,71 +118,70 @@ body.dark {
     text-decoration: none;
     line-height: 2.7rem;
     padding: 0 9px;
+
     body.dark & {
         color: $grisClaro;
     }
 }
 
-.li-p p:hover{
+.li-p p:hover {
     color: $negro;
     background-color: rgba(0, 255, 255, 0.514);
     border-radius: 55px;
     padding: 3px 10px;
-    font-weight: bold;  
+    font-weight: bold;
 }
+
 .show {
     height: auto !important;
 }
 
 @media screen and (max-width:600px) {
     .logo {
-        // border: solid red 1px;
-        // margin-top: -2px;
-        // margin-bottom: 3px;
         margin-left: 76%;
         width: 24%;
         height: 45px;
-        // padding: 10px;
     }
+
     .menu-toggle {
-        // border: solid red 1px;
         color: $azulHover;
-        // background-color: whitesmoke;
         position: absolute;
         display: block;
         padding-left: 15px;
         margin-top: -60px;
         width: 60%;
         z-index: 999;
+
         body.dark & {
             color: $grisClaro;
-            // background-color: $blanco;
         }
     }
+
     #menu {
-        // border-right: solid red 1px;
         z-index: 1;
         background: whitesmoke;
         position: absolute;
-        top: 60px;
+        top: 55px;
         width: 60%;
         height: 0;
         overflow: hidden;
         transition: .9s ease all;
-        // transition: .3s ease-out;
+
         body.dark & {
             background: $azuldark;
         }
     }
+
     #menu ul li {
-        // border: solid red 1px;
         display: block;
         text-align: left;
     }
+
     #menu ul li a {
         font-size: 20px;
         width: 100%;
     }
+
     #menu ul li a:hover {
         font-weight: bold;
     }
@@ -212,6 +214,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
+
     body.dark & {
         background-image: url(/assets/icons/loupe1.png);
     }
@@ -226,6 +229,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
+
     @media screen and (max-width: 500px) {
         width: 100%;
         height: 500px;
@@ -262,9 +266,11 @@ a {
     color: $blanco;
     text-shadow: 3px 3px 3px $negro;
     text-align: center;
+
     body.dark & {
         text-shadow: 2px 2px 8px $azultext;
     }
+
     @media screen and (max-width:500px) {
         width: 98%;
         margin-left: 1%;
@@ -281,10 +287,12 @@ a {
     color: $azultext;
     text-shadow: 3px 3px 3px $blanco;
     text-align: center;
+
     body.dark & {
         color: $blanco;
         text-shadow: 2px 2px 8px $negro;
     }
+
     @media screen and (max-width:500px) {
         font-size: 1.7rem;
         line-height: 2.2rem;
@@ -302,6 +310,7 @@ a {
     color: $azultext;
     font-size: 1.6rem;
     padding: 0px 20px;
+
     body.dark & {
         border: 2px solid $blanco;
         color: $blanco;
@@ -314,6 +323,7 @@ input:focus {
 
 ::placeholder {
     color: #00313f;
+
     body.dark & {
         color: $blanco;
     }
@@ -335,6 +345,7 @@ input:focus {
 
 .categorias a.activo {
     color: $azultext !important;
+
     body.dark & {
         color: $azulshadow !important;
     }
@@ -395,6 +406,7 @@ input:focus {
 // T H E M E
 .columna2 {
     border-right: solid 0.25px $azuldark;
+
     @media screen and (max-width: 600px) {
         border-right: none;
     }
@@ -402,6 +414,7 @@ input:focus {
 
 .columna3 {
     border-left: solid 0.25px $azuldark;
+
     @media screen and (max-width: 900px) {
         border-top: solid 0.25px $azuldark;
         border-left: none !important;
@@ -412,12 +425,15 @@ body.dark {
     .columna2 {
         border-right: solid 0.25px whitesmoke;
     }
+
     .columna3 {
         border-top: solid 0.25px whitesmoke;
         border-left: solid 0.25px whitesmoke;
+
         @media screen and (min-width: 900px) {
             border-top: solid 0.25px transparent;
         }
+
         p {
             color: $grisClaro;
         }
@@ -451,6 +467,7 @@ body.dark {
     width: 100%;
     margin-top: 2%;
     margin-bottom: 2%;
+
     body.dark & {
         border: $blanco solid 1px;
     }
@@ -465,6 +482,7 @@ body.dark {
     border-radius: 100px;
     cursor: pointer;
     vertical-align: top;
+
     @media screen and (max-width: 600px) {
         width: 25%;
     }
@@ -483,10 +501,12 @@ body.dark {
     left: 20%;
     position: absolute;
     top: 1rem;
+
     @media screen and (max-width: 600px) {
         width: 75%;
         left: 25%;
     }
+
     @media screen and (min-width: 600px) {
         top: 0px;
     }
@@ -498,14 +518,17 @@ body.dark {
     font-size: 2rem;
     line-height: 1.5rem;
     padding: 5%;
+
     @media screen and (max-width: 600px) {
         font-size: 1.5rem;
         line-height: 1.3rem;
     }
+
     @media screen and (min-width: 600px) {
         font-size: 1.75rem;
         line-height: 1.5rem;
     }
+
     body.dark & {
         color: $azulshadow;
     }
@@ -518,14 +541,17 @@ body.dark {
     font-weight: 500;
     text-align: left;
     padding: 5%;
+
     @media screen and (max-width: 600px) {
         font-size: 1.2rem;
         margin-top: -1.5rem;
     }
+
     @media screen and (min-width: 600px) {
         font-size: 1.5rem;
         margin-top: -2.5rem;
     }
+
     body.dark & {
         color: $grisClaro;
     }
@@ -540,13 +566,16 @@ body.dark {
 .container-inf--card article p,
 a {
     // border: red solid 1px;
-    color: rgb(73, 73, 73);
-    font-size: 1.4rem;
+    color: $gray--color;
+    font-size: 1.3rem;
     line-height: 1.7rem;
+    font-weight: 400;
+
     @media screen and (max-width: 600px) {
         font-size: 1.1rem;
         line-height: 1.4rem;
     }
+
     body.dark & {
         color: $blanco;
     }
@@ -643,12 +672,15 @@ a {
     font-size: 1.3rem;
     line-height: 1.2rem;
     color: $azultext;
+
     &:hover {
         color: $azulshadow;
         cursor: pointer;
     }
+
     body.dark & {
         color: $blanco;
+
         &:hover {
             color: $azulshadow;
         }
@@ -666,6 +698,7 @@ a {
     // color: $grisOscuro;
     font-size: 0.85rem;
     margin-right: 5px;
+
     &:hover {
         text-decoration: underline;
     }
@@ -680,6 +713,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     body.dark & {
         background-image: url(/assets/icons/home1.png);
     }
@@ -693,6 +727,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     body.dark & {
         background-image: url(/assets/icons/notebook-of-contacts1.png);
     }
@@ -706,6 +741,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     body.dark & {
         background-image: url(/assets/icons/newspaper1.png);
     }
@@ -721,6 +757,7 @@ a {
     background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
+
     body.dark & {
         background-image: url(/assets/icons/user1.png);
     }
@@ -734,6 +771,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     body.dark & {
         background-image: url(/assets/icons/sun.png);
     }
@@ -747,6 +785,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     body.dark & {
         background-image: url(/assets/icons/calendar1.png);
     }
@@ -760,7 +799,72 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     body.dark & {
         background-image: url(/assets/icons/user1.png);
     }
+}
+
+// P R O F I L E 
+.container-profile--photo {
+    body.dark & {
+        border: $azuldark solid 6px;
+        background-color: $azuldark;
+    }
+  }
+  
+.container-profile--inf h2,
+.container-profile--inf h3,
+.container-profile--inf h4,
+.container-profile--inf p {
+    body.dark & {
+        color: $blanco;
+    }
+}
+
+.button-profile {
+    body.dark & {
+        border: $azulshadow solid 2px;
+    }
+}
+
+.button-profile a {
+    body.dark & {
+        color: $azulshadow;
+    }
+}
+
+// S E R V I C E S
+
+.currency-table--container td,
+.card-profile--inf h4,
+.plan-card--price,
+.plan-card--saving,
+.plan-card--ca {
+    body.dark & {
+        color: $blanco;
+    }
+}
+
+// C O L U M N S
+.columna2,
+.columna3 {
+    transition: .9s ease all;
+
+    body.dark & {
+        background-color: $azuldark;
+    }
+}
+
+.prueba--x{
+    // transition: .9s ease all;
+    background-color: whitesmoke;
+    body.dark & {
+        transition: .9s ease all;
+        background-color: $azuldark;
+    }
+}
+
+.prueba--x1{
+    background-color: transparent;
 }

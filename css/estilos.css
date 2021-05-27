@@ -141,7 +141,7 @@ body.dark .li-p p {
     z-index: 1;
     background: whitesmoke;
     position: absolute;
-    top: 60px;
+    top: 55px;
     width: 60%;
     height: 0;
     overflow: hidden;
@@ -604,9 +604,10 @@ body.dark .main-container-inf-index h3 {
 
 .container-inf--card article p,
 a {
-  color: #494949;
-  font-size: 1.4rem;
+  color: #2b2b2b;
+  font-size: 1.3rem;
   line-height: 1.7rem;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {
@@ -854,5 +855,58 @@ body.dark .calendar {
 
 body.dark .user1 {
   background-image: url(/assets/icons/user1.png);
+}
+
+body.dark .container-profile--photo {
+  border: #00090c solid 6px;
+  background-color: #00090c;
+}
+
+body.dark .container-profile--inf h2, body.dark
+.container-profile--inf h3, body.dark
+.container-profile--inf h4, body.dark
+.container-profile--inf p {
+  color: #FEFEFE;
+}
+
+body.dark .button-profile {
+  border: #22bced solid 2px;
+}
+
+body.dark .button-profile a {
+  color: #22bced;
+}
+
+body.dark .currency-table--container td, body.dark
+.card-profile--inf h4, body.dark
+.plan-card--price, body.dark
+.plan-card--saving, body.dark
+.plan-card--ca {
+  color: #FEFEFE;
+}
+
+.columna2,
+.columna3 {
+  -webkit-transition: .9s ease all;
+  transition: .9s ease all;
+}
+
+body.dark .columna2, body.dark
+.columna3 {
+  background-color: #00090c;
+}
+
+.prueba--x {
+  background-color: whitesmoke;
+}
+
+body.dark .prueba--x {
+  -webkit-transition: .9s ease all;
+  transition: .9s ease all;
+  background-color: #00090c;
+}
+
+.prueba--x1 {
+  background-color: transparent;
 }
 /*# sourceMappingURL=estilos.css.map */
