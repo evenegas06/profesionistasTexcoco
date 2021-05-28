@@ -54,13 +54,12 @@ body.dark {
     background: $azuldark;
 }
 
-// ----- ----- ----- ----- ----- HEADER ----- ----- ----- ----- ----- 
-.menu-toggle {
-    display: none;
-    margin-left: auto;
-    line-height: 60px;
-    font-size: 25px;
-    cursor: pointer;
+// ----- ----- ----- ----- ----- H E A D E R ----- ----- ----- ----- ----- 
+.logo {
+    position: relative;
+    margin-bottom: 10px;
+    width: 90px;
+    height: 50px;
 }
 
 .logo a {
@@ -72,36 +71,86 @@ body.dark {
     font-family: "Press Start2P", cursive;
 }
 
-.logo {
-    margin-top: 4px;
-    margin-bottom: 2px;
-    margin-left: .08%;
-    width: 80px;
-    height: 50px;
-    padding-bottom: 10px;
+.logo img {
+    width: 100%;
 }
 
-#menu {
-    margin-left: auto;
+
+#toggle {
+    display: none;
 }
 
-#menu ul li a {
+#toggle::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $azuldark;
+    transform: translateY(-6px);
+    transform: 0.2s;
+
+    body.dark & {
+        background: $blanco;
+    }
+}
+
+#toggle::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $azuldark;
+    transform: translateY(6px);
+    transform: 0.2s;
+
+    body.dark & {
+        background: $blanco;
+    }
+}
+
+#toggle.active::before {
+    width: 28px;
+    transform: translateY(0px) rotate(45deg);
+    background: $azulHover;
+
+    body.dark & {
+        background: $azulshadow;
+    }
+}
+
+#toggle.active::after {
+    width: 28px;
+    transform: translateY(0px) rotate(-45deg);
+    background: $azulHover;
+
+    body.dark & {
+        background: $azulshadow;
+    }
+}
+
+#sidebar {
+    width: auto;
+    transition: 0.5s;
+
+}
+
+#sidebar ul li a {
     display: inline-block;
     position: relative;
     color: $azulHover;
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
-    line-height: 2.7rem;
-    padding: 0 9px;
+    line-height: 2.65rem;
 
-    // transition: .9s ease all;
     body.dark & {
         color: $grisClaro;
     }
 }
 
-#menu ul li a:hover {
+#sidebar ul li a:hover {
     color: $negro;
     background-color: rgba(0, 255, 255, 0.514);
     border-radius: 55px;
@@ -117,7 +166,6 @@ body.dark {
     font-weight: bold;
     text-decoration: none;
     line-height: 2.7rem;
-    padding: 0 9px;
 
     body.dark & {
         color: $grisClaro;
@@ -132,58 +180,73 @@ body.dark {
     font-weight: bold;
 }
 
-.show {
-    height: auto !important;
-}
 
 @media screen and (max-width:600px) {
     .logo {
-        margin-left: 76%;
-        width: 24%;
-        height: 45px;
+        position: absolute;
+        top: 2%;
+        right: 3%;
     }
 
-    .menu-toggle {
+    #overlay.active {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        background-color: #000000ab;
+        z-index: 11;
+        transition: 0.9s;
+        border: none;
+    }
+
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: -400px;
+        width: 60%;
+        height: 100vh;
+        background-color: whitesmoke;
+        transition: 0.5s;
+        padding: 70px 5% 5% 5%;
+        z-index: 2;
+
+        body.dark & {
+            background-color: $azuldark;
+        }
+    }
+
+    #sidebar.active {
+        left: 0px;
+    }
+
+    #sidebar ul li a {
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 2.4rem;
+    }
+
+    #toggle {
         color: $azulHover;
         position: absolute;
-        display: block;
-        padding-left: 15px;
-        margin-top: -60px;
-        width: 60%;
+        margin-left: auto;
+        line-height: 60px;
+        font-size: 25px;
+        cursor: pointer;
+        top: 15px;
+        left: 3%;
+        width: 45px;
+        height: 45px;
+        background: #7575751a;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         z-index: 999;
-
-        body.dark & {
-            color: $grisClaro;
-        }
     }
 
-    #menu {
-        z-index: 1;
-        background: whitesmoke;
-        position: absolute;
-        top: 55px;
-        width: 60%;
-        height: 0;
-        overflow: hidden;
-        transition: .9s ease all;
-
-        body.dark & {
-            background: $azuldark;
-        }
-    }
-
-    #menu ul li {
-        display: block;
-        text-align: left;
-    }
-
-    #menu ul li a {
-        font-size: 20px;
-        width: 100%;
-    }
-
-    #menu ul li a:hover {
-        font-weight: bold;
+    #toggle.active {
+        background: transparent;
     }
 }
 
@@ -241,7 +304,7 @@ a {
     }
 }
 
-// B U S C A D O R 
+// S E A R C H E R 
 .container-details {
     position: relative;
     width: 100%;
@@ -259,7 +322,6 @@ a {
 
 .container-details article h1 {
     width: 90%;
-    // top: 0px;
     margin-left: 5%;
     font-size: 5.3rem;
     line-height: 4.2rem;
@@ -280,7 +342,6 @@ a {
 }
 
 .container-details article h4 {
-    // border: red solid;
     width: 90%;
     margin: 0 auto;
     font-size: 2.5rem;
@@ -440,9 +501,8 @@ body.dark {
     }
 }
 
-// /* Grid */
+// /* G R I D */
 .grid {
-    /* border: solid red; */
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -457,7 +517,6 @@ body.dark {
 }
 
 .grid .item {
-    // border: RED solid 1px;
     border: $azultext solid 1px;
     background-color: transparent;
     border-radius: 25px;
@@ -496,7 +555,6 @@ body.dark {
 }
 
 .main-container-inf-index {
-    // border: solid red 1px;
     width: 80%;
     left: 20%;
     position: absolute;
@@ -558,14 +616,12 @@ body.dark {
 }
 
 .container-inf--card {
-    // border: yellow solid 1px;
     width: 94%;
     margin: 4px auto;
 }
 
-.container-inf--card article p,
-a {
-    // border: red solid 1px;
+.container-inf--card article p a,
+p {
     color: $gray--color;
     font-size: 1.3rem;
     line-height: 1.7rem;
@@ -591,7 +647,6 @@ a {
 }
 
 .buttons-index {
-    /* border: green solid 2px; */
     display: flex;
     flex-wrap: wrap;
     margin-top: 5px;
@@ -642,9 +697,8 @@ a {
     color: white;
 }
 
-// C O L U M N A 3 --- N E W S 
+// C O L U M N  3 --- N E W S 
 .columna3 {
-    // border: solid red 1px;
     padding: 5%;
 }
 
@@ -688,16 +742,16 @@ a {
 }
 
 .columna3 article {
+    // border: red solid 1px;
     display: flex;
     border-bottom: $azulHover solid 1.5px;
     margin-bottom: 20px;
 }
 
 .columna3 a p {
-    // border: red solid 1px;
-    // color: $grisOscuro;
-    font-size: 0.85rem;
-    margin-right: 5px;
+    // border: yellow solid 1px;
+    font-size: 0.80rem;
+    // margin-right: 5px;
 
     &:hover {
         text-decoration: underline;
@@ -709,7 +763,7 @@ a {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-image: url(/assets/icons/home.png);
+    background-image: url(https://profesionistasdetexcoco.carlosarturomt.com//assets/icons/home.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -811,8 +865,8 @@ a {
         border: $azuldark solid 6px;
         background-color: $azuldark;
     }
-  }
-  
+}
+
 .container-profile--inf h2,
 .container-profile--inf h3,
 .container-profile--inf h4,
@@ -828,11 +882,20 @@ a {
     }
 }
 
-.button-profile a {
+.button-profile p,
+a {
     body.dark & {
         color: $azulshadow;
     }
 }
+
+.button-profile {
+    padding: 2.5%;
+    align-items: center;
+    justify-content: center;
+
+}
+
 
 // S E R V I C E S
 
@@ -856,15 +919,17 @@ a {
     }
 }
 
-.prueba--x{
-    // transition: .9s ease all;
-    background-color: whitesmoke;
+// F O O T E R 
+footer h5,
+p,
+a {
     body.dark & {
-        transition: .9s ease all;
-        background-color: $azuldark;
+        color: $blanco;
     }
 }
 
-.prueba--x1{
-    background-color: transparent;
+footer a:hover {
+    body.dark & {
+        color: $azulshadow;
+    }
 }

@@ -1,6 +1,7 @@
 /* V A R I A B L E S */
 :root {
   --gray-color: rgb(43, 43, 43);
+  --gray-shadow: #7575751a;
   --azul-shadow: #22bced;
   --azul-hover: #00313f;
   --azul-text: #000e20;
@@ -9,15 +10,6 @@
 button {
   border: none;
 }
-
-.mt-5 {
-  margin-top: -110px;
-}
-
-.mt-10 {
-  margin-top: 70px;
-}
-
 
 .container-profile--cover {
   width: 100%;
@@ -31,11 +23,7 @@ button {
   border: whitesmoke solid 6px;
   background-color: whitesmoke;
   border-radius: 50%;
-  transition: .9s ease all;
-}
-
-.ta-center0 {
-  text-align: center;
+  transition: 0.9s ease all;
 }
 
 .button_WhatsApp {
@@ -49,7 +37,7 @@ button {
   border-radius: 50%;
   line-height: 80px;
   text-align: center;
-  z-index: 999;
+  z-index: 10;
 }
 
 .img_whatsapp-home {
@@ -57,11 +45,8 @@ button {
 }
 
 /* P R O F I L E  */
-
 .container-profile {
   margin: 3%;
-  /* padding: 2.5%; */
-  /* border: solid 1px var(--azul-text); */
   border-radius: 25px;
 }
 
@@ -100,24 +85,37 @@ button {
 }
 
 .button-profile a {
-  padding: 3px;
+  padding: 0.1px;
   width: 100%;
   text-align: center;
   color: var(--azul-text);
 }
 
 .button-profile a:hover {
-  margin: 1px;
+  margin: 0.1px;
   background-color: var(--azul-hover);
   border-radius: 50px;
   color: white;
 }
 
-/* T A B L E - S E R V I C E S */
+.button-profile p {
+  padding: 0.1px;
+  width: 100%;
+  text-align: center;
+  color: var(--azul-text);
+}
 
+.button-profile p:hover {
+  margin: 0.1px;
+  background-color: var(--azul-hover);
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+/* T A B L E - S E R V I C E S */
 .currency-table--container {
   width: 90%;
-  min-width: 100px;
+  min-width: 50px;
   max-width: 300px;
   height: auto;
   margin: 0 auto;
@@ -164,7 +162,6 @@ button {
 }
 
 /* T A B L E - P I C T U R E S */
-
 .ansiedad {
   display: inline-block;
   width: 50px;
@@ -309,7 +306,6 @@ button {
 }
 
 /*  P L A N S -- S E R V I C E S */
-
 .card-profile--inf h4 {
   color: #00313f;
   width: 80%;
@@ -336,6 +332,7 @@ button {
   max-width: 600px;
   height: auto;
   margin-right: 15px;
+  margin-bottom: 30px;
   padding: 0 15px;
   background-color: #7575751a;
   border-radius: 15px;
@@ -391,7 +388,7 @@ button {
 
 .plan-card--ca {
   width: 90%;
-  margin: 5px 5% 15px 5%;
+  margin: 15px 5% 20px 5%;
   padding: 3% 0;
   background-color: transparent;
   border: solid 2px var(--azul-shadow);
@@ -402,8 +399,117 @@ button {
   color: black;
 }
 
-/* R E S P O N S I V E  */
+/* T O G G L E  */
+#toggle::before {
+  background: white;
+}
 
+#toggle::after {
+  background: white;
+}
+
+
+/* P O P U P - F O R M */
+
+.overlayPopup {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000ab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
+.overlayPopup.active {
+  visibility: visible;
+}
+
+.popup {
+  width: 80%;
+  max-width: 650px;
+  height: auto;
+  max-height: 90vh;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  padding: 5%;
+}
+
+.popup h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.popup form {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.popup form label {
+  font-size: 1.2rem;
+  color: var(--gray-color);
+}
+
+.popup form input {
+  width: 100%;
+  margin: 1% 0;
+  background-color: var(--gray-shadow);
+  border: 0.5px solid var(--gray-shadow);
+  border-radius: 5px;
+  padding: 2% 1%;
+  font-size: 1.2rem;
+  color: var(--azul-text);
+}
+
+.popup form input::placeholder {
+  color: gray;
+}
+
+.popup form textarea {
+  width: 100%;
+  margin: 1% 0;
+  background-color: var(--gray-shadow);
+  border: 0.5px solid var(--gray-shadow);
+  border-radius: 5px;
+  padding: 2% 1%;
+  font-size: 1.2rem;
+  color: var(--azul-text);
+  outline: none;
+
+}
+
+.popup form textarea::placeholder {
+  color: gray;
+}
+
+.closePopup {  
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: var(--azul-text) !important;
+}
+
+.closePopup:hover{
+  color: var(--azul-hover);
+}
+
+.popup .btn-submit {
+  background-color: var(--azul-text);
+  color: #fff;
+}
+
+.popup .btn-submit:hover {
+  background-color: var(--azul-hover);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* R E S P O N S I V E  */
 @media (max-width: 500px) {
   .mt-5 {
     margin-top: -60px;
@@ -411,11 +517,11 @@ button {
 
   .mt-10 {
     margin-top: 30px;
-  }  
+  }
 
   .container-profile--cover {
-    height: 22vh;  
-    margin-top: -60px;  
+    height: 18vh;
+    margin-top: -20px;
   }
 
   .container-profile--inf h2 {
@@ -443,3 +549,13 @@ button {
     line-height: 1.4rem;
   }
 }
+
+@media (min-width: 600px) {
+  .popup {
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 1% 4% 4% 2%;
+  }
+}
+
+

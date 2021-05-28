@@ -1,7 +1,26 @@
+/* V A R I A B L E S */
+:root {
+  --gray-color: rgb(43, 43, 43);
+  --azul-shadow: #22bced;
+  --azul-hover: #00313f;
+  --azul-text: #000e20;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.mt-5 {
+  margin-top: -110px;
+}
+
+.mt-10 {
+  margin-top: 70px;
+}
+
+.ta-center0 {
+  text-align: center;
 }
 
 .psique {
@@ -19,7 +38,6 @@
   width: 16px;
   height: 16px;
   background-image: url(https://psicologosdetexoco2021.carlosarturomt.com/assets/icons/phone-call1.png);
-  /* background-image: url(/assets/icons/phone-call1.png); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +81,38 @@
   cursor: pointer;
 }
 
-/* column drop */
+/* F O O T E R */
+footer {
+  width: 100%;
+  background-color: #7575751a;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h5 {
+  color: var(--azul-hover);
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+footer p,
+a {
+  color: var(--gray-color);
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  color: var(--azul-hover);
+}
+
+/* C O L U M N - D R O P */
 
 .container {
   display: -webkit-flex;
@@ -78,6 +127,7 @@
   width: 100%;
 }
 
+/* R E S P O N S I V E  */
 @media (min-width: 600px) {
   .columna1 {
     /* background-color: whitesmoke; */
@@ -90,6 +140,7 @@
     width: 30%;
     -webkit-order: 1;
     order: 1;
+    padding: 2%;
   }
   .columna3 {
     background-color: whitesmoke;
@@ -97,6 +148,10 @@
     -webkit-order: 3;
     order: 3;
   }
+
+  footer {
+    display: none;
+  }  
 }
 
 @media (min-width: 900px) {
@@ -105,13 +160,25 @@
     margin-left: 20%;
   }
   .columna2 {
+    height: 100vh;
     width: 20%;
-    padding: 2%;
+    padding: 1% 3%;
     position: fixed;
   }
   .columna3 {
     width: 20%;
     padding: 2%;
     display: block;
+  }
+
+  footer {
+    display: inherit;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .mt-50 {
+    margin-top: 50px;
   }
 }

@@ -11,24 +11,18 @@
     <meta name="description"
         content="¿Estás buscando un servicio? Aquí podrás encontrar a profesionistas capacitados y preparados para brindarte su servicio con la seguridad de tener un buen resultado.">
     <meta property="og:site_name" content="profesionistasDeTexcoco">
-    <meta property="og:title" content="Ecuentra al profesionista que buscas.">
+    <meta property="og:title" content="Lic.CarlosArturoMT">
     <meta property="og:description"
-        content="¿Estás buscando un servicio? Aquí podrás encontrar a profesionistas capacitados y preparados para brindarte su servicio con la seguridad de tener un buen resultado.">
-    <meta property="og:image"
-        content="https://imagenes.milenio.com/U7honqjVSjrlrvuPpNmaJTU3kfs=/958x596/smart/https://www.milenio.com/uploads/media/2017/07/21/profesionistas-empleados-meses-egreso-estudiaron.jpeg">
-    <meta property="og:image:url"
-        content="https://imagenes.milenio.com/U7honqjVSjrlrvuPpNmaJTU3kfs=/958x596/smart/https://www.milenio.com/uploads/media/2017/07/21/profesionistas-empleados-meses-egreso-estudiaron.jpeg">
+        content="Licenciado en psicología, maestro en Educación, Desarrollador Web Frontend y un apasionado del conocimiento.">
+    <meta property="og:image" content="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
+    <meta property="og:image:url" content="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
     <meta property="og:url" content="https://profesionistasDeTexcoco.com">
     <meta property="og:type" content="blog">
-    <meta itemprop="image"
-        content="https://imagenes.milenio.com/U7honqjVSjrlrvuPpNmaJTU3kfs=/958x596/smart/https://www.milenio.com/uploads/media/2017/07/21/profesionistas-empleados-meses-egreso-estudiaron.jpeg">
-    <meta name="twitter:image"
-        content="https://imagenes.milenio.com/U7honqjVSjrlrvuPpNmaJTU3kfs=/958x596/smart/https://www.milenio.com/uploads/media/2017/07/21/profesionistas-empleados-meses-egreso-estudiaron.jpeg">
-    <meta itemprop="image"
-        content="https://imagenes.milenio.com/U7honqjVSjrlrvuPpNmaJTU3kfs=/958x596/smart/https://www.milenio.com/uploads/media/2017/07/21/profesionistas-empleados-meses-egreso-estudiaron.jpeg">
+    <meta itemprop="image" content="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
+    <meta name="twitter:image" content="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
+    <meta itemprop="image" content="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
     <title>Psicólogo Carlos Arturo MT</title>
-    <link rel="image_src"
-        href="https://imagenes.milenio.com/U7honqjVSjrlrvuPpNmaJTU3kfs=/958x596/smart/https://www.milenio.com/uploads/media/2017/07/21/profesionistas-empleados-meses-egreso-estudiaron.jpeg">
+    <link rel="image_src" href="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
@@ -44,12 +38,11 @@
 
 <body class="container">
     <!------------------------------------------ BARRA DE NAVEGACIÓN ------------------------------------------------>
-    <header class="columna2">
-        <div class="">
-            <a href="index"><img class="logo" src="https://www.texcocoedomex.gob.mx/img/logo_vive_bien.png"
-                    alt="logo"></a>
+    <header class="columna2" id="overlay">
+        <div class="logo">
+            <a href="index"><img class="" src="https://www.texcocoedomex.gob.mx/img/logo_vive_bien.png" alt="logo"></a>
         </div>
-        <nav id="menu">
+        <nav id="sidebar">
             <ul class="">
                 <li>
                     <a href="index"> <span class="home"></span> Inicio</a>
@@ -59,22 +52,22 @@
                 </li>
                 <li class="categorias" id="categorias">
                     <p>
-                        <a href="#" class="activo">Todos</a>
+                        <a href="index">Todos</a>
                     </p>
                     <p>
-                        <a href="#">Psicólogos</a>
+                        <a href="index" class="activo">Psicólogos</a>
                     </p>
                     <p>
-                        <a href="#">Nutriologos</a>
+                        <a href="index">Nutriologos</a>
                     </p>
                     <p>
-                        <a href="#">Ingenieros</a>
+                        <a href="index">Ingenieros</a>
                     </p>
                     <p>
-                        <a href="#">Estilistas</a>
+                        <a href="index">Estilistas</a>
                     </p>
                     <p>
-                        <a href="#">Jardinería</a>
+                        <a href="index">Jardinería</a>
                     </p>
                 </li>
                 <li>
@@ -90,28 +83,13 @@
                 </li>
             </ul>
         </nav>
-        <div class="menu-toggle" id="intro">
-            <i class="fa fa-bars"></i>
-        </div>
+        <div id="toggle"></div>
     </header>
 
     <!-------------------------------- SECCIÓN "HOME"--------------------------------------->
     <main class="columna1">
-        <!-- <section class="container-details">
-            <article>
-                <h4>¿Qué estás buscando?</h4>
-                <form action="">
-                    <input id="barra-busqueda" class="input" type="text" placeholder="Busca..." value=""
-                        required="required">
-                    <button type="" aria-label="Buscar" class="btn-buscar">
-                        <span class="buscar"></span>
-                    </button>
-                </form>
-            </article>
-        </section> -->
         <aside class="">
-            <img class="container-profile--cover"
-                src="https://wc.wallpaperuse.com/wallp/80-801973_s.jpg"
+            <img class="container-profile--cover" src="https://wc.wallpaperuse.com/wallp/80-801973_s.jpg"
                 alt="Psicólga Altagracia Colorado">
         </aside>
 
@@ -123,17 +101,13 @@
 
                 <aside class="row0 mt-5">
                     <aside class="col-07">
-                        <a href="https://psicologosdetexoco2021.carlosarturomt.com/carlosArturoMT">
-                            <img class="container-profile--photo"
-                                src="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg"
-                                alt="Psicólga Altagracia Colorado">
-                        </a>
+                        <img class="container-profile--photo"
+                            src="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg"
+                            alt="Psicólga Altagracia Colorado">
                     </aside>
                     <aside class="col-05 mt-10">
-                        <button class="button-profile">
-                            <a href="https://psicologosdetexoco2021.carlosarturomt.com/contactoCarlosArturoMT.php"
-                                rel="noopener"> Agendar Cita
-                            </a>
+                        <button class="button-profile" id="openPopup">
+                            <p>Agendar Cita</p>
                         </button>
                     </aside>
                 </aside>
@@ -245,10 +219,42 @@
                         </article>
                     </section>
                 </section>
-
+                
             </article>
-
         </section>
+
+        <footer class="ta-center0">
+            <article>
+                <h5>
+                    <span>&copy;</span>
+                    <span>2021</span>
+                    <span>ProfesionistasDeTexcoco</span>
+                </h5>
+
+                <p>Desarrollo por <a href="https://carlosarturomt.com">CarlosArturoMT</a></p>
+            </article>
+        </footer>
+
+        <aside class="overlayPopup" id="overlayPopup">
+            <dir class="popup" id="popup">
+                <a href="#" id="closePopup" class="closePopup"> <i class="fa fa-times"></i> </a>
+                <h4>Agendar una Cita</h4>
+                <form action="#" method="POST">
+                    <div class="container-inputs">
+                        <label for="name">Nombre</label>
+                        <input type="text" placeholder="Name" name="nombre" autocomplete="on" required>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" name="correo" autocomplete="email" required>
+                        <label for="phone">Teléfono</label>
+                        <input type="phone" placeholder="Phone" name="numero" autocomplete="tel" required>
+                        <label for="text">Mensaje</label>
+                        <textarea cols="45" rows="4" name="mensaje" placeholder="Message" required></textarea>
+                    </div>
+                    <input type="submit" name="btn-submit" class="btn-submit" value="Enviar">
+                </form>
+            </dir>
+        </aside>
+
     </main>
 
     <!-- C O L U M N A   D E R E C H A -->
@@ -355,7 +361,7 @@
 
     </section>
 
-    <!----------------------------------- BOTÓN FLOTANTE Y PIE DE PÁGINA -------------------------------------------->
+    <!----------------------------------- BOTÓN FLOTANTE -------------------------------------------->
     <div class="button_WhatsApp">
         <a href="https://api.whatsapp.com/send?phone=525610284112" target="_blank" rel="noopener">
             <img src="https://carlosarturomt.com/assets/imgs/logo/Whatsapp.png" alt="boton WhatsApp"
@@ -363,21 +369,12 @@
         </a>
     </div>
 
-    <!-- <footer>
-        <article class="container_info ">
-            <h4>
-                <span>&copy;</span>
-                <span>2021</span>
-                <span>UnaPelícula</span>
-            </h4>
-        </article>
-    </footer> -->
-    <!-- cambios para corroborar repo -->
 </body>
 <!-- scripts -->
 <!-- <script src="js/theme.js "></script> -->
 <script src="js/theme.js "></script>
 <script src="js/toggle.js "></script>
+<script src="js/popup.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
     crossorigin="anonymous "></script>
@@ -386,3 +383,45 @@
 <script src="js/main.js "></script>
 
 </html>
+
+<?php
+    if (isset($_POST['btn-submit'])) {
+
+        $asunto = "Correo desde ProfesionistasDeTexcoco";
+        $mensaje = test_input($_POST['mensaje']);
+        $numero = test_input($_POST['numero']);
+        $nombre = test_input($_POST['nombre']);
+        $correo = test_input($_POST['correo']);
+
+
+        $destino1 = "carlosarturomt@gmail.com";
+
+        $header = "From: web carlosarturomt" . "\r\n";
+        $header = "Reply-To: noreply" . "\r\n";
+        $header = "X-Mailer: PHP/" . phpversion();
+
+        $carta = "Mensaje: $mensaje \n";
+        $carta .= "Tel. de contacto: $numero \n";
+        $carta .= "Nombre del contacto: $nombre \n";
+        $carta .= "Correo de contacto: $correo \n";
+
+       
+        // $mail1 = mail($destino1, $asunto, $carta, $header);
+        $mail1 = mail($destino1, $asunto, $carta, $header);
+
+        if ($mail1) {
+
+            echo "<h2>Mensaje enviado, gracias por contactarnos.</h2>";
+            echo "<meta http-equiv='refresh' content='3,url=index.html'>";
+        } else {
+            echo "No se ha podido enviar tu mensaje, intentalo mas tarde";
+        }
+    }
+    function test_input($data)
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+?>

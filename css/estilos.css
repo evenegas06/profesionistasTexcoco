@@ -39,12 +39,11 @@ body.dark {
   background: #00090c;
 }
 
-.menu-toggle {
-  display: none;
-  margin-left: auto;
-  line-height: 60px;
-  font-size: 25px;
-  cursor: pointer;
+.logo {
+  position: relative;
+  margin-bottom: 10px;
+  width: 90px;
+  height: 50px;
 }
 
 .logo a {
@@ -56,35 +55,91 @@ body.dark {
   font-family: "Press Start2P", cursive;
 }
 
-.logo {
-  margin-top: 4px;
-  margin-bottom: 2px;
-  margin-left: .08%;
-  width: 80px;
-  height: 50px;
-  padding-bottom: 10px;
+.logo img {
+  width: 100%;
 }
 
-#menu {
-  margin-left: auto;
+#toggle {
+  display: none;
 }
 
-#menu ul li a {
+#toggle::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #00090c;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-transform: 0.2s;
+          transform: 0.2s;
+}
+
+body.dark #toggle::before {
+  background: #FEFEFE;
+}
+
+#toggle::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #00090c;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  -webkit-transform: 0.2s;
+          transform: 0.2s;
+}
+
+body.dark #toggle::after {
+  background: #FEFEFE;
+}
+
+#toggle.active::before {
+  width: 28px;
+  -webkit-transform: translateY(0px) rotate(45deg);
+          transform: translateY(0px) rotate(45deg);
+  background: #00313f;
+}
+
+body.dark #toggle.active::before {
+  background: #22bced;
+}
+
+#toggle.active::after {
+  width: 28px;
+  -webkit-transform: translateY(0px) rotate(-45deg);
+          transform: translateY(0px) rotate(-45deg);
+  background: #00313f;
+}
+
+body.dark #toggle.active::after {
+  background: #22bced;
+}
+
+#sidebar {
+  width: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#sidebar ul li a {
   display: inline-block;
   position: relative;
   color: #00313f;
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
-  line-height: 2.7rem;
-  padding: 0 9px;
+  line-height: 2.65rem;
 }
 
-body.dark #menu ul li a {
+body.dark #sidebar ul li a {
   color: #ececec;
 }
 
-#menu ul li a:hover {
+#sidebar ul li a:hover {
   color: #000;
   background-color: rgba(0, 255, 255, 0.514);
   border-radius: 55px;
@@ -100,7 +155,6 @@ body.dark #menu ul li a {
   font-weight: bold;
   text-decoration: none;
   line-height: 2.7rem;
-  padding: 0 9px;
 }
 
 body.dark .li-p p {
@@ -115,52 +169,73 @@ body.dark .li-p p {
   font-weight: bold;
 }
 
-.show {
-  height: auto !important;
-}
-
 @media screen and (max-width: 600px) {
   .logo {
-    margin-left: 76%;
-    width: 24%;
-    height: 45px;
+    position: absolute;
+    top: 2%;
+    right: 3%;
   }
-  .menu-toggle {
+  #overlay.active {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: #000000ab;
+    z-index: 11;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+    border: none;
+  }
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: -400px;
+    width: 60%;
+    height: 100vh;
+    background-color: whitesmoke;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 70px 5% 5% 5%;
+    z-index: 2;
+  }
+  body.dark #sidebar {
+    background-color: #00090c;
+  }
+  #sidebar.active {
+    left: 0px;
+  }
+  #sidebar ul li a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+  }
+  #toggle {
     color: #00313f;
     position: absolute;
-    display: block;
-    padding-left: 15px;
-    margin-top: -60px;
-    width: 60%;
+    margin-left: auto;
+    line-height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+    top: 15px;
+    left: 3%;
+    width: 45px;
+    height: 45px;
+    background: #7575751a;
+    border-radius: 50%;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 999;
   }
-  body.dark .menu-toggle {
-    color: #ececec;
-  }
-  #menu {
-    z-index: 1;
-    background: whitesmoke;
-    position: absolute;
-    top: 55px;
-    width: 60%;
-    height: 0;
-    overflow: hidden;
-    -webkit-transition: .9s ease all;
-    transition: .9s ease all;
-  }
-  body.dark #menu {
-    background: #00090c;
-  }
-  #menu ul li {
-    display: block;
-    text-align: left;
-  }
-  #menu ul li a {
-    font-size: 20px;
-    width: 100%;
-  }
-  #menu ul li a:hover {
-    font-weight: bold;
+  #toggle.active {
+    background: transparent;
   }
 }
 
@@ -466,7 +541,6 @@ body.dark .columna3 p {
 }
 
 .grid {
-  /* border: solid red; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,8 +676,8 @@ body.dark .main-container-inf-index h3 {
   margin: 4px auto;
 }
 
-.container-inf--card article p,
-a {
+.container-inf--card article p a,
+p {
   color: #2b2b2b;
   font-size: 1.3rem;
   line-height: 1.7rem;
@@ -611,15 +685,15 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .container-inf--card article p,
-  a {
+  .container-inf--card article p a,
+  p {
     font-size: 1.1rem;
     line-height: 1.4rem;
   }
 }
 
-body.dark .container-inf--card article p, body.dark
-a {
+body.dark .container-inf--card article p a, body.dark
+p {
   color: #FEFEFE;
 }
 
@@ -633,7 +707,6 @@ a {
 }
 
 .buttons-index {
-  /* border: green solid 2px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -749,8 +822,7 @@ body.dark .columna3 h3:hover {
 }
 
 .columna3 a p {
-  font-size: 0.85rem;
-  margin-right: 5px;
+  font-size: 0.80rem;
 }
 
 .columna3 a p:hover {
@@ -761,7 +833,7 @@ body.dark .columna3 h3:hover {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/assets/icons/home.png);
+  background-image: url(https://profesionistasdetexcoco.carlosarturomt.com//assets/icons/home.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -873,8 +945,19 @@ body.dark .button-profile {
   border: #22bced solid 2px;
 }
 
-body.dark .button-profile a {
+body.dark .button-profile p, body.dark
+a {
   color: #22bced;
+}
+
+.button-profile {
+  padding: 2.5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body.dark .currency-table--container td, body.dark
@@ -896,17 +979,13 @@ body.dark .columna2, body.dark
   background-color: #00090c;
 }
 
-.prueba--x {
-  background-color: whitesmoke;
+body.dark footer h5, body.dark
+p, body.dark
+a {
+  color: #FEFEFE;
 }
 
-body.dark .prueba--x {
-  -webkit-transition: .9s ease all;
-  transition: .9s ease all;
-  background-color: #00090c;
-}
-
-.prueba--x1 {
-  background-color: transparent;
+body.dark footer a:hover {
+  color: #22bced;
 }
 /*# sourceMappingURL=estilos.css.map */
