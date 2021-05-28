@@ -90,7 +90,7 @@
     <main class="columna1">
         <aside class="">
             <img class="container-profile--cover" src="https://wc.wallpaperuse.com/wallp/80-801973_s.jpg"
-                alt="Psicólga Altagracia Colorado">
+                alt="Psicólgo Carlos Arturo Miranda Trujano">
         </aside>
 
         <section class="container-grid container-profile">
@@ -165,23 +165,29 @@
                     </div>
                 </article>
 
-                <section class="col-12">
+                <section class="col-12" id="services">
                     <article class="container-profile--inf ta-center0">
                         <h4>Servicios</h4>
                         <p>Culaquier servicio necesita completa disponibilidad y compromiso por
                             parte del paciente.</p>
                     </article>
                     <section class="plans-container--slider">
-
                         <article class="plans-container--card">
                             <aside class="card-profile--inf">
                                 <h4 class="plan-card--title">Psicoterapia Individual</h4>
                                 <p class="plan-card--price"><span>$</span>350</p>
                                 <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo de 50min.
                                 </p>
-                                <button class="plan-card--ca"> <a
-                                        href="https://psicologosdetexoco2021.carlosarturomt.com/contactoCarlosArturoMT">Agendar
-                                        Cita <span></span></a> </button>
+                                <button class="plan-card--ca" id="openPopup1"> <p>Agendar Cita <span></span></p> </button>
+                            </aside>
+                        </article>
+                        <article class="plans-container--card">
+                            <aside class="card-profile--inf">
+                                <h4 class="plan-card--title">Psicoterapia Ind.Online</h4>
+                                <p class="plan-card--price"><span>$</span>200</p>
+                                <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo de 40min.
+                                </p>
+                                <button class="plan-card--ca" id="openPopup2"> <p>Agendar Cita <span></span></p> </button>
                             </aside>
                         </article>
                         <article class="plans-container--card">
@@ -190,9 +196,7 @@
                                 <p class="plan-card--price"><span>$</span>950</p>
                                 <p class="plan-card--saving">*Aplicación de una serie de pruebas con un tiempo
                                     aproximado de 120min.</p>
-                                <button class="plan-card--ca"> <a
-                                        href="https://psicologosdetexoco2021.carlosarturomt.com/contactoCarlosArturoMT">Agendar
-                                        Cita <span></span></a> </button>
+                                <button class="plan-card--ca" id="openPopup3"> <p>Agendar Cita <span></span></p> </button>
                             </aside>
                         </article>
                         <article class="plans-container--card">
@@ -201,9 +205,7 @@
                                 <p class="plan-card--price"><span>$</span>450</p>
                                 <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo
                                     aproximado de 80 minutos.</p>
-                                <button class="plan-card--ca"> <a
-                                        href="https://psicologosdetexoco2021.carlosarturomt.com/contactoCarlosArturoMT">Agendar
-                                        Cita <span></span> </a> </button>
+                                <button class="plan-card--ca" id="openPopup4"> <p>Agendar Cita <span></span></p> </button>
                             </aside>
                         </article>
                         <article class="plans-container--card">
@@ -212,9 +214,7 @@
                                 <p class="plan-card--price"><span>$</span>250</p>
                                 <p class="plan-card--saving">*El precio puede variar de acuerdo al objetivo así como la
                                     población a quién se dirige/hora.</p>
-                                <button class="plan-card--ca"> <a
-                                        href="https://psicologosdetexoco2021.carlosarturomt.com/contactoCarlosArturoMT">Agendar
-                                        Cita <span></span> </a> </button>
+                                <button class="plan-card--ca" id="openPopup5"> <p>Agendar Cita <span></span></p> </button>
                             </aside>
                         </article>
                     </section>
@@ -235,7 +235,8 @@
             </article>
         </footer>
 
-        <aside class="overlayPopup" id="overlayPopup">
+    <!-- F O R M - D A T E  -->
+        <aside class="overlay-popup" id="overlayPopup">
             <dir class="popup" id="popup">
                 <a href="#" id="closePopup" class="closePopup"> <i class="fa fa-times"></i> </a>
                 <h4>Agendar una Cita</h4>
@@ -244,7 +245,7 @@
                         <label for="name">Nombre</label>
                         <input type="text" placeholder="Name" name="nombre" autocomplete="on" required>
                         <label for="email">Email</label>
-                        <input type="email" placeholder="Email" name="correo" autocomplete="email" required>
+                        <input type="email" placeholder="Email" name="correo" autocomplete="email">
                         <label for="phone">Teléfono</label>
                         <input type="phone" placeholder="Phone" name="numero" autocomplete="tel" required>
                         <label for="text">Mensaje</label>
@@ -255,7 +256,173 @@
             </dir>
         </aside>
 
+    <!-- F O R M - S E R V I C E 1  -->
+    <aside class="overlay-popup" id="overlayPopup1">
+            <dir class="popup" id="popup1">
+                <a href="#services" id="closePopup1" class="closePopup"> <i class="fa fa-times"></i> </a>
+                <h4>Agendar Terapia Individual</h4>
+                <form action="#" method="POST">
+                    <div class="container-inputs">
+                        <label for="name">Nombre</label>
+                        <input type="text" placeholder="Name" name="nombre" autocomplete="on" required>
+                        <div class="ageSex">
+                            <div class="age">
+                            <label for="name">Edad</label>
+                            <input type="text" placeholder="Age" name="edad" autocomplete="on" required>
+                            </div>
+                            <div class="sex">
+                            <label for="name">Sexo</label>
+                            <input type="text" placeholder="Sex" name="sexo" autocomplete="on">
+                            </div>
+                        </div>
+                        <label for="phone">Teléfono</label>
+                        <input type="phone" placeholder="Phone" name="numero" autocomplete="tel" required>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" name="correo" autocomplete="email">
+                        <label for="date">Fecha Tentativa</label>
+                        <input type="date" name="fecha" placeholder="">
+                        <label for="text">Mensaje</label>
+                        <textarea cols="45" rows="4" name="mensaje" placeholder="Message" required></textarea>
+                    </div>
+                    <input type="submit" name="btn-submit1" class="btn-submit" value="Enviar">
+                </form>
+            </dir>
+        </aside>
+
+
     </main>
+
+    <!-- F O R M - S E R V I C E 2  -->
+    <aside class="overlay-popup" id="overlayPopup2">
+        <dir class="popup" id="popup2">
+            <a href="#services" id="closePopup2" class="closePopup"> <i class="fa fa-times"></i> </a>
+            <h4>Agendar Terapia Online</h4>
+            <form action="#" method="POST">
+                <div class="container-inputs">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Name" name="nombre" autocomplete="on" required>
+                    <div class="ageSex">
+                        <div class="age">
+                        <label for="name">Edad</label>
+                        <input type="text" placeholder="Age" name="edad" autocomplete="on" required>
+                            </div>
+                            <div class="sex">
+                            <label for="name">Sexo</label>
+                            <input type="text" placeholder="Sex" name="sexo" autocomplete="on">
+                            </div>
+                        </div>
+                        <label for="phone">Teléfono</label>
+                        <input type="phone" placeholder="Phone" name="numero" autocomplete="tel" required>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" name="correo" autocomplete="email">
+                        <label for="date">Fecha Tentativa</label>
+                        <input type="date" name="fecha" placeholder="">
+                        <label for="text">Mensaje</label>
+                        <textarea cols="45" rows="4" name="mensaje" placeholder="Message" required></textarea>
+                    </div>
+                <input type="submit" name="btn-submit2" class="btn-submit" value="Enviar">
+            </form>
+        </dir>
+    </aside>
+
+    <!-- F O R M - S E R V I C E 3  -->
+    <aside class="overlay-popup" id="overlayPopup3">
+        <dir class="popup" id="popup3">
+            <a href="#services" id="closePopup3" class="closePopup"> <i class="fa fa-times"></i> </a>
+            <h4>Agendar Orientación Vocacional</h4>
+            <form action="#" method="POST">
+                <div class="container-inputs">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Name" name="nombre" autocomplete="on" required>
+                    <div class="ageSex">
+                        <div class="age">
+                        <label for="name">Edad</label>
+                        <input type="text" placeholder="Age" name="edad" autocomplete="on" required>
+                            </div>
+                            <div class="sex">
+                            <label for="name">Sexo</label>
+                            <input type="text" placeholder="Sex" name="sexo" autocomplete="on">
+                            </div>
+                        </div>
+                        <label for="phone">Teléfono</label>
+                        <input type="phone" placeholder="Phone" name="numero" autocomplete="tel" required>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" name="correo" autocomplete="email">
+                        <label for="date">Fecha Tentativa</label>
+                        <input type="date" name="fecha" placeholder="">
+                        <label for="text">Mensaje</label>
+                        <textarea cols="45" rows="4" name="mensaje" placeholder="Message" required></textarea>
+                    </div>
+                <input type="submit" name="btn-submit3" class="btn-submit" value="Enviar">
+            </form>
+        </dir>
+    </aside>
+
+    <!-- F O R M - S E R V I C E 4  -->
+    <aside class="overlay-popup" id="overlayPopup4">
+        <dir class="popup" id="popup4">
+            <a href="#services" id="closePopup4" class="closePopup"> <i class="fa fa-times"></i> </a>
+            <h4>Agendar Terpia Familiar</h4>
+            <form action="#" method="POST">
+                <div class="container-inputs">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Name" name="nombre" autocomplete="on" required>
+                    <div class="ageSex">
+                        <div class="age">
+                        <label for="name">Edad</label>
+                        <input type="text" placeholder="Age" name="edad" autocomplete="on" required>
+                            </div>
+                            <div class="sex">
+                            <label for="name">Sexo</label>
+                            <input type="text" placeholder="Sex" name="sexo" autocomplete="on">
+                            </div>
+                        </div>
+                        <label for="phone">Teléfono</label>
+                        <input type="phone" placeholder="Phone" name="numero" autocomplete="tel" required>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" name="correo" autocomplete="email">
+                        <label for="date">Fecha Tentativa</label>
+                        <input type="date" name="fecha" placeholder="">
+                        <label for="text">Mensaje</label>
+                        <textarea cols="45" rows="4" name="mensaje" placeholder="Message" required></textarea>
+                    </div>
+                <input type="submit" name="btn-submit4" class="btn-submit" value="Enviar">
+            </form>
+        </dir>
+    </aside>
+
+    <!-- F O R M - S E R V I C E 5  -->
+    <aside class="overlay-popup" id="overlayPopup5">
+        <dir class="popup" id="popup5">
+            <a href="#services" id="closePopup5" class="closePopup"> <i class="fa fa-times"></i> </a>
+            <h4>Agendar Capacitación</h4>
+            <form action="#" method="POST">
+                <div class="container-inputs">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Name" name="nombre" autocomplete="on" required>
+                    <div class="ageSex">
+                        <div class="age">
+                        <label for="name">Edad</label>
+                        <input type="text" placeholder="Age" name="edad" autocomplete="on" required>
+                            </div>
+                            <div class="sex">
+                            <label for="name">Sexo</label>
+                            <input type="text" placeholder="Sex" name="sexo" autocomplete="on">
+                            </div>
+                        </div>
+                        <label for="phone">Teléfono</label>
+                        <input type="phone" placeholder="Phone" name="numero" autocomplete="tel" required>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" name="correo" autocomplete="email">
+                        <label for="date">Fecha Tentativa</label>
+                        <input type="date" name="fecha" placeholder="">
+                        <label for="text">Mensaje</label>
+                        <textarea cols="45" rows="4" name="mensaje" placeholder="Message" required></textarea>
+                    </div>
+                <input type="submit" name="btn-submit5" class="btn-submit" value="Enviar">
+            </form>
+        </dir>
+    </aside>
 
     <!-- C O L U M N A   D E R E C H A -->
 
@@ -385,9 +552,10 @@
 </html>
 
 <?php
+    // D A T E - S E R V I C E
     if (isset($_POST['btn-submit'])) {
 
-        $asunto = "Correo desde ProfesionistasDeTexcoco";
+        $asunto = "Agendar Cita de ProfesionistasDeTexcoco";
         $mensaje = test_input($_POST['mensaje']);
         $numero = test_input($_POST['numero']);
         $nombre = test_input($_POST['nombre']);
@@ -405,18 +573,208 @@
         $carta .= "Nombre del contacto: $nombre \n";
         $carta .= "Correo de contacto: $correo \n";
 
-       
-        // $mail1 = mail($destino1, $asunto, $carta, $header);
         $mail1 = mail($destino1, $asunto, $carta, $header);
 
         if ($mail1) {
 
             echo "<h2>Mensaje enviado, gracias por contactarnos.</h2>";
-            echo "<meta http-equiv='refresh' content='3,url=index.html'>";
+                echo "<meta http-equiv='refresh' content='60,url=carlosarturomt.php'>";
         } else {
             echo "No se ha podido enviar tu mensaje, intentalo mas tarde";
         }
     }
+
+    // S E R V I C E 1
+    if (isset($_POST['btn-submit1'])) {
+
+        $asunto = "Agendar Terapia Individual de ProfesionistasDeTexcoco";
+        $nombre = test_input($_POST['nombre']);
+        $edad = test_input($_POST['edad']);
+        $sexo = test_input($_POST['sexo']);
+        $numero = test_input($_POST['numero']);
+        $correo = test_input($_POST['correo']);
+        $fecha = test_input($_POST['fecha']);
+        $mensaje = test_input($_POST['mensaje']);
+
+        $destino1 = "carlosarturomt@gmail.com";
+
+        $header = "From: web carlosarturomt" . "\r\n";
+        $header = "Reply-To: noreply" . "\r\n";
+        $header = "X-Mailer: PHP/" . phpversion();
+
+        $carta = "Mensaje: $mensaje \n";
+        $carta .= "Nombre del cliente: $nombre \n";
+        $carta .= "Edad del cliente: $edad \n";
+        $carta .= "Sexo del cliente: $sexo \n";
+        $carta .= "Tel. del cliente: $numero \n";
+        $carta .= "Correo del cliente: $correo \n";
+        $carta .= "Fecha Tentativa: $fecha \n";
+
+
+        $mail2 = mail($destino1, $asunto, $carta, $header);
+
+        if ($mail2) {
+
+            echo "<h2>Mensaje enviado, gracias por contactarnos.</h2>";
+                echo "<meta http-equiv='refresh' content='900,url=carlosarturomt.php'>";
+        } else {
+            echo "No se ha podido enviar tu mensaje, intentalo mas tarde";
+        }
+    }
+
+    // S E R V I C E 2
+    if (isset($_POST['btn-submit2'])) {
+
+        $asunto = "Agendar Terapia Online de ProfesionistasDeTexcoco";
+        $nombre = test_input($_POST['nombre']);
+        $edad = test_input($_POST['edad']);
+        $sexo = test_input($_POST['sexo']);
+        $numero = test_input($_POST['numero']);
+        $correo = test_input($_POST['correo']);
+        $fecha = test_input($_POST['fecha']);
+        $mensaje = test_input($_POST['mensaje']);
+
+        $destino1 = "carlosarturomt@gmail.com";
+
+        $header = "From: web carlosarturomt" . "\r\n";
+        $header = "Reply-To: noreply" . "\r\n";
+        $header = "X-Mailer: PHP/" . phpversion();
+
+        $carta = "Mensaje: $mensaje \n";
+        $carta .= "Nombre del cliente: $nombre \n";
+        $carta .= "Edad del cliente: $edad \n";
+        $carta .= "Sexo del cliente: $sexo \n";
+        $carta .= "Tel. del cliente: $numero \n";
+        $carta .= "Correo del cliente: $correo \n";
+        $carta .= "Fecha Tentativa: $fecha \n";
+
+
+        $mail3 = mail($destino1, $asunto, $carta, $header);
+
+        if ($mail3) {
+
+            echo "<h2>Mensaje enviado, gracias por contactarnos.</h2>";
+                echo "<meta http-equiv='refresh' content='900,url=carlosarturomt.php'>";
+        } else {
+            echo "No se ha podido enviar tu mensaje, intentalo mas tarde";
+        }
+    }
+
+    // S E R V I C E 3
+    if (isset($_POST['btn-submit3'])) {
+
+        $asunto = "Agendar Orientación Vocacional de ProfesionistasDeTexcoco";
+        $nombre = test_input($_POST['nombre']);
+        $edad = test_input($_POST['edad']);
+        $sexo = test_input($_POST['sexo']);
+        $numero = test_input($_POST['numero']);
+        $correo = test_input($_POST['correo']);
+        $fecha = test_input($_POST['fecha']);
+        $mensaje = test_input($_POST['mensaje']);
+
+        $destino1 = "carlosarturomt@gmail.com";
+
+        $header = "From: web carlosarturomt" . "\r\n";
+        $header = "Reply-To: noreply" . "\r\n";
+        $header = "X-Mailer: PHP/" . phpversion();
+
+        $carta = "Mensaje: $mensaje \n";
+        $carta .= "Nombre del cliente: $nombre \n";
+        $carta .= "Edad del cliente: $edad \n";
+        $carta .= "Sexo del cliente: $sexo \n";
+        $carta .= "Tel. del cliente: $numero \n";
+        $carta .= "Correo del cliente: $correo \n";
+        $carta .= "Fecha Tentativa: $fecha \n";
+
+
+        $mail4 = mail($destino1, $asunto, $carta, $header);
+
+        if ($mail4) {
+
+            echo "<h2>Mensaje enviado, gracias por contactarnos.</h2>";
+                echo "<meta http-equiv='refresh' content='900,url=carlosarturomt.php'>";
+        } else {
+            echo "No se ha podido enviar tu mensaje, intentalo mas tarde";
+        }
+    }
+
+    // S E R V I C E 4
+    if (isset($_POST['btn-submit4'])) {
+
+        $asunto = "Agendar Terpia Familiar de ProfesionistasDeTexcoco";
+        $nombre = test_input($_POST['nombre']);
+        $edad = test_input($_POST['edad']);
+        $sexo = test_input($_POST['sexo']);
+        $numero = test_input($_POST['numero']);
+        $correo = test_input($_POST['correo']);
+        $fecha = test_input($_POST['fecha']);
+        $mensaje = test_input($_POST['mensaje']);
+
+        $destino1 = "carlosarturomt@gmail.com";
+
+        $header = "From: web carlosarturomt" . "\r\n";
+        $header = "Reply-To: noreply" . "\r\n";
+        $header = "X-Mailer: PHP/" . phpversion();
+
+        $carta = "Mensaje: $mensaje \n";
+        $carta .= "Nombre del cliente: $nombre \n";
+        $carta .= "Edad del cliente: $edad \n";
+        $carta .= "Sexo del cliente: $sexo \n";
+        $carta .= "Tel. del cliente: $numero \n";
+        $carta .= "Correo del cliente: $correo \n";
+        $carta .= "Fecha Tentativa: $fecha \n";
+
+
+        $mail5 = mail($destino1, $asunto, $carta, $header);
+
+        if ($mail5) {
+
+            echo "<h2>Mensaje enviado, gracias por contactarnos.</h2>";
+                echo "<meta http-equiv='refresh' content='900,url=carlosarturomt.php'>";
+        } else {
+            echo "No se ha podido enviar tu mensaje, intentalo mas tarde";
+        }
+    }
+
+    // S E R V I C E 5
+    if (isset($_POST['btn-submit5'])) {
+
+        $asunto = "Agendar Capacitación de ProfesionistasDeTexcoco";
+        $nombre = test_input($_POST['nombre']);
+        $edad = test_input($_POST['edad']);
+        $sexo = test_input($_POST['sexo']);
+        $numero = test_input($_POST['numero']);
+        $correo = test_input($_POST['correo']);
+        $fecha = test_input($_POST['fecha']);
+        $mensaje = test_input($_POST['mensaje']);
+
+        $destino1 = "carlosarturomt@gmail.com";
+
+        $header = "From: web carlosarturomt" . "\r\n";
+        $header = "Reply-To: noreply" . "\r\n";
+        $header = "X-Mailer: PHP/" . phpversion();
+
+        $carta = "Mensaje: $mensaje \n";
+        $carta .= "Nombre del cliente: $nombre \n";
+        $carta .= "Edad del cliente: $edad \n";
+        $carta .= "Sexo del cliente: $sexo \n";
+        $carta .= "Tel. del cliente: $numero \n";
+        $carta .= "Correo del cliente: $correo \n";
+        $carta .= "Fecha Tentativa: $fecha \n";
+
+
+        $mail6 = mail($destino1, $asunto, $carta, $header);
+
+        if ($mail6) {
+
+            echo "<h2>Mensaje enviado, gracias por contactarnos.</h2>";
+                echo "<meta http-equiv='refresh' content='900,url=carlosarturomt.php'>";
+        } else {
+            echo "No se ha podido enviar tu mensaje, intentalo mas tarde";
+        }
+    }
+
+
     function test_input($data)
     {
         $data = trim($data);

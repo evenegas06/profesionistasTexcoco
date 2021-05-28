@@ -374,6 +374,7 @@ button {
 
 .plan-card--saving {
   font-size: 0.8rem;
+  line-height: 0.9rem;
   text-align: center;
   color: #757575;
 }
@@ -397,6 +398,7 @@ button {
   font-weight: bold;
   line-height: 1.8rem;
   color: black;
+  cursor: pointer;
 }
 
 /* T O G G L E  */
@@ -411,7 +413,7 @@ button {
 
 /* P O P U P - F O R M */
 
-.overlayPopup {
+.overlay-popup {
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -425,7 +427,7 @@ button {
   z-index: 15;
 }
 
-.overlayPopup.active {
+.overlay-popup.active {
   visibility: visible;
 }
 
@@ -485,6 +487,20 @@ button {
 
 .popup form textarea::placeholder {
   color: gray;
+}
+
+.ageSex {
+  display: flex;
+}
+
+.age {
+  width: 50%;
+  padding-right: 2%;
+}
+
+.sex {
+  width: 50%;
+  padding-left: 2%;
 }
 
 .closePopup {  
