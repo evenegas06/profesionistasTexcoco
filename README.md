@@ -7,6 +7,7 @@ Página Web con la finalidad de promover el trabajo de los profesionistas de la 
 - Column Drop.
 - Filtros y barra de búsqueda con html y js.
 - Theme Dark.
+- Formularios Pop Up.
 
 
 <h2>
