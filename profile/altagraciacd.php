@@ -8,62 +8,62 @@
     <meta name="author" content="carlosArturoMT">
     <meta name="DC.creator" content="carlosArturoMT">
     <meta name="copyright" content="carlosArturoMT">
-    <meta name="description" content="¿Estás buscando un servicio? Aquí podrás encontrar a profesionistas capacitados y preparados para brindarte su servicio con la seguridad de tener un buen resultado.">
+    <meta name="description" content="Creo firmemente en las bondades de mantener una vida saludable. Soy una persona entusiasta, de  que más personas, se ocupen de sus mentes saludables.">
     <meta property="og:site_name" content="profesionistasDeTexcoco">
-    <meta property="og:title" content="Lic.CarlosArturoMT">
-    <meta property="og:description" content="Licenciado en psicología, maestro en Educación, Desarrollador Web Frontend y un apasionado del conocimiento.">
-    <meta property="og:image" content="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
-    <meta property="og:image:url" content="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
+    <meta property="og:title" content="Lic. Altagracia Colorado Díaz">
+    <meta property="og:description" content="Creo firmemente en las bondades de mantener una vida saludable. Soy una persona entusiasta, de  que más personas, se ocupen de sus mentes saludables.">
+    <meta property="og:image" content="https://psicologosdetexoco2021.carlosarturomt.com/assets/imgs/altagraciaColorado.jpg">
+    <meta property="og:image:url" content="https://psicologosdetexoco2021.carlosarturomt.com/assets/imgs/altagraciaColorado.jpg">
     <meta property="og:url" content="https://profesionistasDeTexcoco.com">
     <meta property="og:type" content="blog">
-    <meta itemprop="image" content="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
-    <meta name="twitter:image" content="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
-    <meta itemprop="image" content="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
-    <title>Psicólogo Carlos Arturo MT</title>
-    <link rel="image_src" href="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg">
+    <meta itemprop="image" content="https://psicologosdetexoco2021.carlosarturomt.com/assets/imgs/altagraciaColorado.jpg">
+    <meta name="twitter:image" content="https://psicologosdetexoco2021.carlosarturomt.com/assets/imgs/altagraciaColorado.jpg">
+    <meta itemprop="image" content="https://psicologosdetexoco2021.carlosarturomt.com/assets/imgs/altagraciaColorado.jpg">
+    <title>Psicóloga Altagracia Colorado Díaz</title>
+    <link rel="image_src" href="https://psicologosdetexoco2021.carlosarturomt.com/assets/imgs/altagraciaColorado.jpg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" type="image/png" href="/assets/icons/notebook-of-contacts1.png">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/gid.css">
-    <link rel="stylesheet" href="css/phoneProfile.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/gid.css">
+    <link rel="stylesheet" href="/css/phoneProfile.css">
 </head>
 
 <body class="container">
     <!------------------------------------------ N A V - B A R ------------------------------------------------>
     <header class="columna2" id="overlay">
         <div class="logo">
-            <a href="index"><img class="" src="https://www.texcocoedomex.gob.mx/img/logo_vive_bien.png" alt="logo"></a>
+            <a href="https://profesionistasdetexcoco.carlosarturomt.com"><img class="" src="https://www.texcocoedomex.gob.mx/img/logo_vive_bien.png" alt="logo"></a>
         </div>
         <nav id="sidebar">
             <ul class="">
                 <li>
-                    <a href="index"> <span class="home"></span> Inicio</a>
+                    <a href="https://profesionistasdetexcoco.carlosarturomt.com"> <span class="home"></span> Inicio</a>
                 </li>
                 <li>
-                    <a href="index"> <span class="users"></span> Profesionistas</a>
+                    <a href="https://profesionistasdetexcoco.carlosarturomt.com"> <span class="users"></span> Profesionistas</a>
                 </li>
                 <li class="categorias" id="categorias">
                     <p>
-                        <a href="index">Todos</a>
+                        <a href="https://profesionistasdetexcoco.carlosarturomt.com">Todos</a>
                     </p>
                     <p>
-                        <a href="index" class="activo">Psicólogos</a>
+                        <a href="https://profesionistasdetexcoco.carlosarturomt.com" class="activo">Psicólogos</a>
                     </p>
                     <p>
-                        <a href="index">Nutriologos</a>
+                        <a href="https://profesionistasdetexcoco.carlosarturomt.com">Nutriologos</a>
                     </p>
                     <p>
-                        <a href="index">Ingenieros</a>
+                        <a href="https://profesionistasdetexcoco.carlosarturomt.com">Ingenieros</a>
                     </p>
                     <p>
-                        <a href="index">Estilistas</a>
+                        <a href="https://profesionistasdetexcoco.carlosarturomt.com">Estilistas</a>
                     </p>
                     <p>
-                        <a href="index">Jardinería</a>
+                        <a href="https://profesionistasdetexcoco.carlosarturomt.com">Jardinería</a>
                     </p>
                 </li>
                 <li>
@@ -85,16 +85,16 @@
     <!-------------------------------- S E C T I O N - H O M E--------------------------------------->
     <main class="columna1">
         <aside class="">
-            <img class="container-profile--cover" src="https://wc.wallpaperuse.com/wallp/80-801973_s.jpg" alt="Psicólgo Carlos Arturo Miranda Trujano">
+            <img class="container-profile--cover" src="https://wc.wallpaperuse.com/wallp/80-801973_s.jpg" alt="Portada">
         </aside>
 
         <section class="container-grid container-profile">
-            <!-- Psicólogo Carlos Arturo Miranda Trujano -->
+            <!-- Psicóloga ALTAGRACIA COLORADO DÍAZ-->
             <article class="row" data-categoria="psicólogos" data-etiquetas="Psicología psicología Psicologia psicologiaPsicólogo psicólogo Psicologo psicologo cognitivo conductual   Cognitivo Conductual Ansiedad ansiedad Depresión depresion Depresion depresión terapia Terapia Rendimiento Atención CI coeficiente Escuela escuela educación Educación Maestro maestro Educativo educativo Desarrollo desarrollo web Web Frontend frontend" data-descripcion="El licenciado Carlos es un psicólogo con especialidad en Educación, conocimientos en desarrollo web y apasionado del conocimiento.">
 
                 <aside class="row0 mt-5">
                     <aside class="col-07">
-                        <img class="container-profile--photo" src="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg" alt="Psicólga Altagracia Colorado">
+                        <img class="container-profile--photo" src="https://psicologosdetexoco2021.carlosarturomt.com/assets/imgs/altagraciaColorado.jpg" alt="Psicólga Altagracia Colorado">
                     </aside>
                     <aside class="col-05 mt-10">
                         <button class="button-profile" id="openPopup">
@@ -105,15 +105,15 @@
 
                 <article class="container-profile--inf col-12">
                     <hgroup>
-                        <h2>Lic. Carlos Arturo Miranda Trujano</h2>
-                        <h3>Psicólogo</h3>
+                        <h2>Lic. Altagracia Colorado Díaz</h2>
+                        <h3>Psicóloga</h3>
                     </hgroup>
                 </article>
 
                 <aside class="container-inf--card col-12">
                     <article>
-                        <p><span class="verified"></span>No.Cédula: 12247784</p>
-                        <p><a href="tel:+525610284112"><span class="call"></span>Phone: 56 1028 4112</a></p>
+                        <p><span class="verified"></span>No.Cédula: 3909698</p>
+                        <p><a href="tel:+525549346837"><span class="call"></span>Phone: 55 4934 6837</a></p>
                         <p><a href="https://www.google.com/maps/place/Consciente+Colectivo/@19.5104491,-98.8804663,19z/data=!4m5!3m4!1s0x85d1e7b350eeaaab:0x42c02f89b3a284e9!8m2!3d19.5104161!4d-98.8798142?hl=en" target="_blank" rel="noopener"><span class="map"></span>Aldama 148 col el Carmen,
                                 Texcoco</a></p>
                     </article>
@@ -121,14 +121,21 @@
 
                 <aside class="container-profile--inf col-12">
                     <h4>Sobre mí</h4>
-                    <p>Amo mi labor profesional, el conocimiento y la capacitación constante.</p>
+                    <p>Creo firmemente en las bondades de mantener una vida saludable.
+                        Soy una persona entusiasta, de que más personas, se ocupen de sus mentes saludables.</p>
                 </aside>
 
                 <aside class="container-profile--inf col-12">
                     <h4>Formación</h4>
-                    <p>• Maestría en Educación, Liceo UPG, 2020.</p>
-                    <p>• Licenciatura en Psicología, Liceo UPG, 2017.</p>
-                    <p>• Diplomado en línea de Habilidades Digitales para la docencia, Fundación Carlos Slim, 2021.</p>
+                    <p>• Dificultades de aprendizaje, detección, evaluación e intervención, Instituto de Neuroeducación,
+                        2018.</p>
+                    <p>• Diplomado en gestión cultural para niños y adolescentes, Secretaria de cultura de la ciudad de
+                        México, 2017.</p>
+                    <p>• Maestría en Psicoterapia Psicoanalítica de niños y adolescentes, Centro Universitario Emmanuel
+                        Kant, 2013.</p>
+                    <p>• Diploma en Técnica Psicoanalitica, Hospital Psiquiátrico Fray Bernardino Álvarez, 2003.</p>
+                    <p>• Diploma en Psicoterapia Grupal, Hopital Psiquiátrico Fray Bernardino Àlvarez, 2002.</p>
+                    <p>• Licenciatura en Psicología, U.A.E.M, 2001.</p>
                 </aside>
 
                 <article class="container-profile--inf col-12">
@@ -136,20 +143,32 @@
                     <div class="currency-table--container">
                         <table>
                             <tr>
-                                <td class="table__top-left">Ansiedad</td>
-                                <td class="table__top-right table__right"><span class="ansiedad"></span></td>
+                                <td class="table__top-left">Trastorno de conducta </td>
+                                <td class="table__top-right table__right"><span class="confuse"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Codependencia</td>
+                                <td class="table__right"><span class="idea"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Ataques de pánico</td>
+                                <td class="table__right"><span class="panico"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Ansiedad</td>
+                                <td class="table__right"><span class="ansiedad"></span></td>
                             </tr>
                             <tr>
                                 <td>Depresión</td>
                                 <td class="table__right"><span class="depresion"></span></td>
                             </tr>
                             <tr>
-                                <td>Rendimiento Académico</td>
-                                <td class="table__right"><span class="confuse"></span></td>
+                                <td>Abuso del alcohol</td>
+                                <td class="table__right"><span class="alcohol"></span></td>
                             </tr>
                             <tr>
-                                <td class="table__bottom-left">Codependencia</td>
-                                <td class="table__bottom-right table__right"><span class="idea"></span></td>
+                                <td class="table__bottom-left">Comportamiento suicida</td>
+                                <td class="table__bottom-right table__right"><span class="suicidio"></span></td>
                             </tr>
                         </table>
                     </div>
@@ -164,8 +183,16 @@
                     <section class="plans-container--slider">
                         <article class="plans-container--card">
                             <aside class="card-profile--inf">
+                                <h4 class="plan-card--title">Terpia Familiar</h4>
+                                <p class="plan-card--price"><span>$</span>500</p>
+                                <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo
+                                    aproximado de 80 minutos.</p>
+                            </aside>
+                        </article>
+                        <article class="plans-container--card">
+                            <aside class="card-profile--inf">
                                 <h4 class="plan-card--title">Psicoterapia Individual</h4>
-                                <p class="plan-card--price"><span>$</span>350</p>
+                                <p class="plan-card--price"><span>$</span>400</p>
                                 <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo de 50min.
                                 </p>
                             </aside>
@@ -173,33 +200,17 @@
                         <article class="plans-container--card">
                             <aside class="card-profile--inf">
                                 <h4 class="plan-card--title">Psicoterapia Ind.Online</h4>
-                                <p class="plan-card--price"><span>$</span>200</p>
+                                <p class="plan-card--price"><span>$</span>350</p>
                                 <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo de 40min.
                                 </p>
                             </aside>
                         </article>
                         <article class="plans-container--card">
                             <aside class="card-profile--inf">
-                                <h4 class="plan-card--title">Orientación Vocacional</h4>
-                                <p class="plan-card--price"><span>$</span>950</p>
-                                <p class="plan-card--saving">*Aplicación de una serie de pruebas con un tiempo
-                                    aproximado de 120min.</p>
-                            </aside>
-                        </article>
-                        <article class="plans-container--card">
-                            <aside class="card-profile--inf">
-                                <h4 class="plan-card--title">Terpia Familiar</h4>
-                                <p class="plan-card--price"><span>$</span>450</p>
-                                <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo
-                                    aproximado de 80 minutos.</p>
-                            </aside>
-                        </article>
-                        <article class="plans-container--card">
-                            <aside class="card-profile--inf">
-                                <h4 class="plan-card--title">Capacitación</h4>
-                                <p class="plan-card--price"><span>$</span>250</p>
-                                <p class="plan-card--saving">*El precio puede variar de acuerdo al objetivo así como la
-                                    población a quién se dirige/hora.</p>
+                                <h4 class="plan-card--title">Terpia a niños yAdolescentes</h4>
+                                <p class="plan-card--price"><span>$</span>400</p>
+                                <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo de 50min.
+                                </p>
                             </aside>
                         </article>
                     </section>
@@ -257,10 +268,10 @@
                         <br>
                         <select class="popup-select" name="servicio" placeholder="Servicio" required>
                             <option hidden selected style="color:gray !important">Selecciona una opción</option>
-                            <option class="popup-option">Psicoterapia Individual</option>
-                            <option class="popup-option">Psicoterapia Online</option>
-                            <option class="popup-option">Orientación Vocacional</option>
                             <option class="popup-option">Terpia Familiar</option>
+                            <option class="popup-option">Psicoterapia Individual</option>
+                            <option class="popup-option">Terpia a niños y Adolescentes</option>
+                            <option class="popup-option">Psicoterapia Online</option>
                             <option class="popup-option">Capacitación</option>
                         </select>
                         <br>
@@ -295,7 +306,6 @@
                 </form>
             </dir>
         </aside>
-
     </main>
 
     <!-- C O L U M N A - D E R E C H A - N E W S -->
@@ -312,7 +322,7 @@
                 </picture>
             </a>
             <article>
-                <a href="index">
+                <a href="https://profesionistasdetexcoco.carlosarturomt.com">
                     <p><span class="calendar"></span> julio 20, 2020</p>
                 </a>
                 <a href="https://carlosarturomt.com">
@@ -330,7 +340,7 @@
                 </picture>
             </a>
             <article>
-                <a href="index">
+                <a href="https://profesionistasdetexcoco.carlosarturomt.com">
                     <p><span class="calendar"></span> julio 20, 2020</p>
                 </a>
                 <a href="https://carlosarturomt.com">
@@ -397,17 +407,16 @@
 
     <!----------------------------------- B U T T O N - F L O A T -------------------------------------------->
     <div class="button_WhatsApp">
-        <a href="https://api.whatsapp.com/send?phone=525610284112" target="_blank" rel="noopener">
+        <a href="https://api.whatsapp.com/send?phone=525549346837" target="_blank" rel="noopener">
             <img src="https://carlosarturomt.com/assets/imgs/logo/Whatsapp.png" alt="boton WhatsApp" class="img_whatsapp-home">
         </a>
     </div>
 
 </body>
 <!-- scripts -->
-<!-- <script src="js/theme.js "></script> -->
-<script src="js/theme.js "></script>
-<script src="js/toggle.js "></script>
-<script src="js/popup.js"></script>
+<script src="/js/theme.js "></script>
+<script src="/js/toggle.js "></script>
+<script src="/js/popup.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js " crossorigin="anonymous " aria-label="Dark Theme "></script>
 <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js "></script>
@@ -419,14 +428,14 @@
 // D A T E - S E R V I C E
 if (isset($_POST['btn-submit'])) {
 
-    $asunto = "Agendar Cita de ProfesionistasDeTexcoco";
+    $asunto = "Agendar Cita de ProfesionistasDeTexcoco | Altagracia";
     $mensaje = test_input($_POST['mensaje']);
     $numero = test_input($_POST['numero']);
     $nombre = test_input($_POST['nombre']);
     $correo = test_input($_POST['correo']);
 
 
-    $destino1 = "carlosarturomt@gmail.com";
+    $destino1 = "carlosarturomt@gmail.com, sepapsicologia@gmail.com";
 
     $header = "From: web carlosarturomt" . "\r\n";
     $header = "Reply-To: noreply" . "\r\n";
@@ -451,7 +460,7 @@ if (isset($_POST['btn-submit'])) {
 // S E R V I C E S
 if (isset($_POST['btn-submit1'])) {
 
-    $asunto = "Agendar Servicio de ProfesionistasDeTexcoco";
+    $asunto = "Agendar Servicio de ProfesionistasDeTexcoco | Altagracia";
     $servicio = test_input($_POST['servicio']);
     $nombre = test_input($_POST['nombre']);
     $edad = test_input($_POST['edad']);
@@ -461,7 +470,7 @@ if (isset($_POST['btn-submit1'])) {
     $fecha = test_input($_POST['fecha']);
     $mensaje = test_input($_POST['mensaje']);
 
-    $destino1 = "carlosarturomt@gmail.com";
+    $destino1 = "carlosarturomt@gmail.com, sepapsicologia@gmail.com";
 
     $header = "From: web carlosarturomt" . "\r\n";
     $header = "Reply-To: noreply" . "\r\n";
