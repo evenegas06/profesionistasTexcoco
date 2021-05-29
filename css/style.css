@@ -75,6 +75,16 @@
   background-repeat: no-repeat;
 }
 
+.web {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("http://profesionistasdetexcoco.carlosarturomt.com/assets/icons/worldWeb.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .buttonStyle {
   border: none;
   background: none;

@@ -28,7 +28,7 @@
     <link rel="icon" type="image/png" href="/assets/icons/notebook-of-contacts1.png">
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/gid.css">
+    <link rel="stylesheet" href="/css/grid.css">
     <link rel="stylesheet" href="/css/phoneProfile.css">
 </head>
 

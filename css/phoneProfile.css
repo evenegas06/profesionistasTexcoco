@@ -161,6 +161,15 @@ button {
   padding: 5%;
 }
 
+.currency-table--container .table__right50 {
+  width: 50%;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  color: #757575;
+  padding: 5%;
+}
+
 /* T A B L E - P I C T U R E S */
 .ansiedad {
   display: inline-block;
@@ -305,6 +314,94 @@ button {
   background-repeat: no-repeat;
 }
 
+.bootstrap {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/tecnologias/bootstrap.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.react {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/tecnologias/react.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.javascript {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/tecnologias/javascript1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wordpress {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/tecnologias/wordpress.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.woocommerce {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/tecnologias/woocommerce.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.moodle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/tecnologias/moodle.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.laravel {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/tecnologias/laravel.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.git {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/tecnologias/git.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /*  P L A N S -- S E R V I C E S */
 .card-profile--inf h4 {
   color: #00313f;
@@ -411,7 +508,6 @@ button {
   background: white;
 }
 
-
 /* P O P U P - F O R M */
 
 .overlay-popup {
@@ -439,7 +535,7 @@ button {
   max-height: 90vh;
   background-color: whitesmoke;
   border-radius: 15px;
-  padding:  3% 5%;
+  padding: 3% 5%;
 }
 
 .popup h4 {
@@ -466,7 +562,7 @@ button {
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   outline: none;
   text-align: center !important;
   align-items: center;
@@ -482,7 +578,7 @@ button {
   font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   outline: none;
   text-align: center !important;
   align-items: center;
@@ -491,9 +587,6 @@ button {
   border-radius: 5px;
   width: 100%;
 }
-
-
-
 
 .popup form {
   width: 100%;
@@ -551,14 +644,14 @@ button {
   padding-left: 2%;
 }
 
-.closePopup {  
+.closePopup {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
   color: var(--azul-text) !important;
 }
 
-.closePopup:hover{
+.closePopup:hover {
   color: var(--azul-hover);
 }
 
@@ -626,7 +719,5 @@ button {
     margin: 15px 20% 20px 20%;
     padding: 1%;
     border-radius: 10px;
-  }  
+  }
 }
-
-

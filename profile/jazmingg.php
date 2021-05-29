@@ -12,28 +12,28 @@
     <meta property="og:site_name" content="profesionistasDeTexcoco">
     <meta property="og:title" content="Lic. Jazmín Nallely González Gutiérrez">
     <meta property="og:description" content="Maestra con experiencia en nivel primaria, con capacidad para la multitarea y con conocimientos en los métodos de aprendizaje para aplicarlos en la educación de forma didáctica.">
-    <meta property="og:image" content="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpeg">
-    <meta property="og:image:url" content="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpeg">
+    <meta property="og:image" content="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpg">
+    <meta property="og:image:url" content="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpg">
     <meta property="og:url" content="https://profesionistasDeTexcoco.com">
     <meta property="og:type" content="blog">
-    <meta itemprop="image" content="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpeg">
-    <meta name="twitter:image" content="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpeg">
-    <meta itemprop="image" content="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpeg">
+    <meta itemprop="image" content="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpg">
+    <meta name="twitter:image" content="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpg">
+    <meta itemprop="image" content="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpg">
     <title>Psicólga Jazmín Nallely González Gutiérrez</title>
-    <link rel="image_src" href="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpeg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="image_src" href="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpg">
+    <link rel="preconnect" hrf="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" type="image/png" href="/assets/icons/notebook-of-contacts1.png">
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/gid.css">
+    <link rel="stylesheet" href="/css/grid.css">
     <link rel="stylesheet" href="/css/phoneProfile.css">
 </head>
 
 <body class="container">
-    <!------------------------------------------ N A V - B A R ------------------------------------------------>
+    <!-- C O L U M N A 2 - L E F T - N A B-B A R -->
     <header class="columna2" id="overlay">
         <div class="logo">
             <a href="/index.html"><img class="" src="https://www.texcocoedomex.gob.mx/img/logo_vive_bien.png" alt="logo"></a>
@@ -82,7 +82,7 @@
         <div id="toggle"></div>
     </header>
 
-    <!-------------------------------- S E C T I O N - H O M E--------------------------------------->
+    <!-- C O L U M N A 1 - C E N T E R - H O M E -->
     <main class="columna1">
         <aside class="">
             <img class="container-profile--cover" src="https://wc.wallpaperuse.com/wallp/80-801973_s.jpg" alt="Portada">
@@ -94,7 +94,7 @@
                 <!-- P H O T O -->
                 <aside class="row0 mt-5">
                     <aside class="col-07">
-                        <img class="container-profile--photo" src="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpeg" alt="Psicólga Jazmín Nallely González Gutiérrez">
+                        <img class="container-profile--photo" src="https://profesionistasdetexcoco.carlosarturomt.com/assets/imgs/psicologos/jazminGonzalesG.jpg" alt="Pscólga Jazmín Nallely González Gutiérrez">
                     </aside>
                     <aside class="col-05 mt-10">
                         <button class="button-profile" id="openPopup">
@@ -292,7 +292,7 @@
         </aside>
     </main>
 
-    <!-- C O L U M N A - D E R E C H A - N E W S -->
+    <!-- C O L U M N A 3 - R I G H T - N E W S -->
     <section class="columna3">
         <hgroup>
             <h2 class="news-h2">News</h2>
