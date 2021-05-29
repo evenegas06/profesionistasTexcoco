@@ -1,4 +1,8 @@
 /assets
 .assets
 assets/
-assets/*
+assets/
+*
+
+# Ignora todos los archivos xml
+*.xml
