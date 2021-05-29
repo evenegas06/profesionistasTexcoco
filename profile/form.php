@@ -18,9 +18,9 @@ if (isset($_POST['btn-submit'])) {
 
     $destino1 = test_input($_POST['destino1']);
 
-    $header = "From: web carlosarturomt" . "\r\n";
-    $header = "Reply-To: noreply" . "\r\n";
-    $header = "X-Mailer: PHP/" . phpversion();
+    $header = 'From: profesionistasmexico@gmail.com' . "\r\n" .
+    'Reply-To: noreply' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
 
     $carta = "Mensaje: $mensaje \n";
     $carta .= "Tel. de contacto: $numero \n";
@@ -61,9 +61,9 @@ if (isset($_POST['btn-submit1'])) {
 
     $destino1 = test_input($_POST['destino1']);
 
-    $header = "From: web carlosarturomt" . "\r\n";
-    $header = "Reply-To: noreply" . "\r\n";
-    $header = "X-Mailer: PHP/" . phpversion();
+    $header = 'From: profesionistasmexico@gmail.com' . "\r\n" .
+    'Reply-To: noreply' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
 
     $carta = "Servicio: $servicio \n";
     $carta .= "Nombre del cliente: $nombre \n";
