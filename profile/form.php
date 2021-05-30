@@ -11,6 +11,9 @@ if (isset($_POST['btn-submit'])) {
     echo $cad;
 
     $asunto = "Agendar Cita de ProfesionistasDeTexcoco";
+
+    $profesionista = test_input($_POST['profesionista']);
+
     $mensaje = test_input($_POST['mensaje']);
     $numero = test_input($_POST['numero']);
     $nombre = test_input($_POST['nombre']);
@@ -22,7 +25,8 @@ if (isset($_POST['btn-submit'])) {
     'Reply-To: noreply' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-    $carta = "Mensaje: $mensaje \n";
+    $carta = "Para: $profesionista \n";
+    $carta .= "Mensaje: $mensaje \n";
     $carta .= "Tel. de contacto: $numero \n";
     $carta .= "Nombre del contacto: $nombre \n";
     $carta .= "Correo de contacto: $correo \n";
@@ -50,6 +54,9 @@ if (isset($_POST['btn-submit1'])) {
     echo $cad;
 
     $asunto = "Agendar Servicio de ProfesionistasDeTexcoco";
+
+    $profesionista = test_input($_POST['profesionista']);
+
     $servicio = test_input($_POST['servicio']);
     $nombre = test_input($_POST['nombre']);
     $edad = test_input($_POST['edad']);
@@ -65,7 +72,8 @@ if (isset($_POST['btn-submit1'])) {
     'Reply-To: noreply' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-    $carta = "Servicio: $servicio \n";
+    $carta = "Para: $profesionista \n";
+    $carta .= "Servicio: $servicio \n";
     $carta .= "Nombre del cliente: $nombre \n";
     $carta .= "Edad del cliente: $edad \n";
     $carta .= "Sexo del cliente: $sexo \n";

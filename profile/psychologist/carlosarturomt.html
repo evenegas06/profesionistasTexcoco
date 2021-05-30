@@ -91,10 +91,10 @@
         <section class="container-grid container-profile">
             <!-- Psicólogo Carlos Arturo Miranda Trujano -->
             <article class="row" data-categoria="psicólogos" data-etiquetas="Psicología psicología Psicologia psicologiaPsicólogo psicólogo Psicologo psicologo cognitivo conductual   Cognitivo Conductual Ansiedad ansiedad Depresión depresion Depresion depresión terapia Terapia Rendimiento Atención CI coeficiente Escuela escuela educación Educación Maestro maestro Educativo educativo Desarrollo desarrollo web Web Frontend frontend" data-descripcion="El licenciado Carlos es un psicólogo con especialidad en Educación, conocimientos en desarrollo web y apasionado del conocimiento.">
-
+                <!-- P H O T O -->
                 <aside class="row0 mt-5">
                     <aside class="col-07">
-                        <img class="container-profile--photo" src="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg" alt="Psicólga Altagracia Colorado">
+                        <img class="container-profile--photo" src="https://carlosarturomt.com/assets/imgs/artur/carlosarturomt_elegante.jpg" alt="Psicólgo Carlos Arturo Miranda Trujano">
                     </aside>
                     <aside class="col-05 mt-10">
                         <button class="button-profile" id="openPopup">
@@ -102,14 +102,14 @@
                         </button>
                     </aside>
                 </aside>
-
+                <!-- P R O F E S S I O N -->
                 <article class="container-profile--inf col-12">
                     <hgroup>
                         <h2>Lic. Carlos Arturo Miranda Trujano</h2>
                         <h3>Psicólogo</h3>
                     </hgroup>
                 </article>
-
+                <!-- I N F O R M A T I O N -->
                 <aside class="container-inf--card col-12">
                     <article>
                         <p><span class="verified"></span>No.Cédula: 12247784</p>
@@ -118,26 +118,30 @@
                                 Texcoco</a></p>
                     </article>
                 </aside>
-
+                <!-- A B O U T  -->
                 <aside class="container-profile--inf col-12">
                     <h4>Sobre mí</h4>
                     <p>Amo mi labor profesional, el conocimiento y la capacitación constante.</p>
                 </aside>
-
+                <!-- E D U C A T I O N -->
                 <aside class="container-profile--inf col-12">
                     <h4>Formación</h4>
                     <p>• Maestría en Educación, Liceo UPG, 2020.</p>
                     <p>• Licenciatura en Psicología, Liceo UPG, 2017.</p>
                     <p>• Diplomado en línea de Habilidades Digitales para la docencia, Fundación Carlos Slim, 2021.</p>
                 </aside>
-
+                <!-- R E A S O N S -->
                 <article class="container-profile--inf col-12">
                     <h4 class="ta-center0">Mótivos de Consulta</h4>
                     <div class="currency-table--container">
                         <table>
                             <tr>
-                                <td class="table__top-left">Ansiedad</td>
-                                <td class="table__top-right table__right"><span class="ansiedad"></span></td>
+                                <td class="table__top-left">Psicometría</td>
+                                <td class="table__top-right table__right"><span class="psicometria"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Ansiedad</td>
+                                <td class="table__right"><span class="ansiedad"></span></td>
                             </tr>
                             <tr>
                                 <td>Depresión</td>
@@ -154,7 +158,7 @@
                         </table>
                     </div>
                 </article>
-
+                <!-- S E R V I C E S -->
                 <section class="col-12" id="services">
                     <article class="container-profile--inf ta-center0">
                         <h4>Servicios</h4>
@@ -172,6 +176,13 @@
                         </article>
                         <article class="plans-container--card">
                             <aside class="card-profile--inf">
+                                <h4 class="plan-card--title">Terpia a niños yAdolescentes</h4>
+                                <p class="plan-card--price"><span>$</span>350</p>
+                                <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo de 50min.</p>
+                            </aside>
+                        </article>
+                        <article class="plans-container--card">
+                            <aside class="card-profile--inf">
                                 <h4 class="plan-card--title">Psicoterapia Ind.Online</h4>
                                 <p class="plan-card--price"><span>$</span>200</p>
                                 <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo de 40min.
@@ -184,14 +195,6 @@
                                 <p class="plan-card--price"><span>$</span>950</p>
                                 <p class="plan-card--saving">*Aplicación de una serie de pruebas con un tiempo
                                     aproximado de 120min.</p>
-                            </aside>
-                        </article>
-                        <article class="plans-container--card">
-                            <aside class="card-profile--inf">
-                                <h4 class="plan-card--title">Terpia Familiar</h4>
-                                <p class="plan-card--price"><span>$</span>450</p>
-                                <p class="plan-card--saving">*La consulta es una vez a la semana con un tiempo
-                                    aproximado de 80 minutos.</p>
                             </aside>
                         </article>
                         <article class="plans-container--card">
@@ -231,6 +234,7 @@
                 <h4>Agendar una Cita</h4>
                 <form action="/profile/form.php" method="POST">
                     <div class="container-inputs">
+                        <input type="text" hidden name="profesionista" value="CarlosArturoMT|Psicólogo">
                         <input type="email" hidden  name="destino1" value="car_art_13@hotmail.com">
                         <label for="name">Nombre</label>
                         <input type="text" placeholder="Name" name="nombre" autocomplete="on" required>
@@ -254,15 +258,16 @@
                 </h4>
                 <form action="/profile/form.php" method="POST">
                     <div class="container-inputs">
+                        <input type="text" hidden name="profesionista" value="CarlosArturoMT|Psicólogo">
                         <input type="email" hidden  name="destino1" value="car_art_13@hotmail.com">
                         <label for="">Servicio</label>
                         <br>
                         <select class="popup-select" name="servicio" placeholder="Servicio" required>
                             <option hidden selected style="color:gray !important">Selecciona una opción</option>
+                            <option class="popup-option">Terpia a niños y Adolescentes</option>
                             <option class="popup-option">Psicoterapia Individual</option>
                             <option class="popup-option">Psicoterapia Online</option>
                             <option class="popup-option">Orientación Vocacional</option>
-                            <option class="popup-option">Terpia Familiar</option>
                             <option class="popup-option">Capacitación</option>
                         </select>
                         <br>
