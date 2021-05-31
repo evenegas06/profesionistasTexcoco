@@ -171,6 +171,17 @@ button {
 }
 
 /* T A B L E - P I C T U R E S */
+.psicometria {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-image: url("https://profesionistasdetexcoco.carlosarturomt.com/assets/icons/psychology.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .ansiedad {
   display: inline-block;
   width: 50px;
