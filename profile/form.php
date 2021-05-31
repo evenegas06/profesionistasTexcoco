@@ -7,15 +7,6 @@ if ( isset($_POST['btn-submit-date']) || isset($_POST['btn-submit-service'])) {
     $carta = '';
     $destino = $principal . ', ' . test_input($_POST['destino']);
 
-<<<<<<< HEAD
-=======
-    $asunto = "Agendar Cita de ProfesionistasDeTexcoco";
-
-    $profesionista = test_input($_POST['profesionista']);
-
-    $mensaje = test_input($_POST['mensaje']);
-    $numero = test_input($_POST['numero']);
->>>>>>> 01cf520824235426838ee163b50ca1e6bc861cd0
     $nombre = test_input($_POST['nombre']);
     $correo = test_input($_POST['correo']);
     $numero = test_input($_POST['numero']);
@@ -30,7 +21,6 @@ if (isset($_POST['btn-submit-date'])) {
 
     $asunto = "Agendar Cita de ProfesionistasDeTexcoco";
 
-    $carta = "Para: $profesionista \n";
     $carta .= "Mensaje: $mensaje \n";
     $carta .= "Tel. de contacto: $numero \n";
     $carta .= "Nombre del contacto: $nombre \n";
@@ -40,19 +30,12 @@ if (isset($_POST['btn-submit-date'])) {
 } elseif (isset($_POST['btn-submit-service'])) {
 
     $asunto = "Agendar Servicio de ProfesionistasDeTexcoco";
-<<<<<<< HEAD
     
-=======
-
-    $profesionista = test_input($_POST['profesionista']);
-
->>>>>>> 01cf520824235426838ee163b50ca1e6bc861cd0
     $servicio = test_input($_POST['servicio']);
     $edad = test_input($_POST['edad']);
     $sexo = test_input($_POST['sexo']);
     $fecha = test_input($_POST['fecha']);
 
-    $carta = "Para: $profesionista \n";
     $carta .= "Servicio: $servicio \n";
     $carta .= "Nombre del cliente: $nombre \n";
     $carta .= "Edad del cliente: $edad \n";
